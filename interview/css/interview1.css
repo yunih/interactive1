@@ -2,3 +2,26 @@
 body {
   background: yellow;
 }
+
+body {
+  background: #587E20;
+  color: white;
+  font-size: 22px;
+}
+
+div {
+  max-width: 650px;}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#toc {
+  position: fixed;
+  top: 1em;
+ right: 1em;
+}
