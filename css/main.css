@@ -6,12 +6,17 @@
       padding: 5px;
 
     }
+    div {
+  text-align: center;
+}
+
     
     /* begin styles */
     
     body {
       color: pink;
     }
+
 body {background-color: black;}
 
     a {
@@ -24,3 +29,6 @@ body {background-color: black;}
       color: black;
       background: white;
     }
+li {
+  list-style-type:none;
+}
