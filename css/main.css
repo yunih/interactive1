@@ -32,3 +32,6 @@ body {background-color: black;}
 li {
   list-style-type:none;
 }
+p,p,h1,h2,h3,li {
+	font-family: 'ZCOOL KuaiLe', cursive;
+}
