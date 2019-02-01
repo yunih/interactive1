@@ -1,0 +1,26 @@
+
+    /* reset styles */
+    
+    * {
+      margin: 5px;
+      padding: 5px;
+
+    }
+    
+    /* begin styles */
+    
+    body {
+      color: pink;
+    }
+body {background-color: black;}
+
+    a {
+      color: white;
+      background: none;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: black;
+      background: white;
+    }
