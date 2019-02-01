@@ -32,8 +32,9 @@ body {background-color: black;}
 li {
   list-style-type:none;
 }
-p,p,h1,h2,h3,li {
+p,p,li {
 	font-family: 'ZCOOL KuaiLe', cursive;
 }
+h1,h2,h3{font-family: 'Major Mono Display', monospace;}
 h1{font-size: 50px;}
 p{font-size: 25px;}
