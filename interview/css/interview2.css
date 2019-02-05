@@ -43,3 +43,10 @@ li {
     background-color: #F2F0EA;
 }
 
+a{
+	color: #EA4062 ;
+	text-decoration: none;
+}
+a:hover {
+	color: black;
+}
