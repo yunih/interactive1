@@ -23,13 +23,13 @@ body {
 #toc {
   position: fixed;
   top: 1em;
- left: 1em;
+ right: 1em;
 }
 
 #toc {
   position: fixed;
   top: 1em;
-  left: 1em;
+  right: 1em;
   background: white;
   color: #587E20;
   padding: 1em;
@@ -67,3 +67,23 @@ figcaption {
   font-size: 0.7em;
 }
 
+.highlight {
+  background: yellow;
+  color: #587E20;
+}
+
+h1 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.1;
+  margin-bottom: 2em;
+}
+
+h2 {
+  background: white;
+  padding: 0.5em;
+  font-weight: normal;
+  color: #587E20;
+  margin-top: 2em;
+}
