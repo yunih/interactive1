@@ -23,5 +23,47 @@ body {
 #toc {
   position: fixed;
   top: 1em;
- right: 1em;
+ left: 1em;
 }
+
+#toc {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background: white;
+  color: #587E20;
+  padding: 1em;
+  font-size: 0.7em;
+}
+
+a {
+  color: yellow;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+#toc a {
+  color: #587E20;
+  text-decoration: none;
+}
+
+#toc a:hover {
+  color: black;
+}
+
+#toc ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 0.7em;
+}
+
