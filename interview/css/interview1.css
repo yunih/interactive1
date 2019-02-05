@@ -17,18 +17,18 @@ img {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: 'Rajdhani', sans-serif;
 }
 
 #toc {
   position: fixed;
-  top: 1em;
+  bottom: 1em;
  right: 1em;
 }
 
 #toc {
   position: fixed;
-  top: 1em;
+  bottom: 1em;
   right: 1em;
   background: white;
   color: #587E20;
@@ -73,6 +73,7 @@ figcaption {
 }
 
 h1 {
+	font-family: 'Abril Fatface', cursive;
   font-weight: normal;
   text-align: center;
   font-size: 3em;
@@ -81,9 +82,15 @@ h1 {
 }
 
 h2 {
+	font-family: 'Staatliches', cursive;
   background: white;
   padding: 0.5em;
   font-weight: normal;
   color: #587E20;
   margin-top: 2em;
+}
+
+
+img.profile {
+  max-width: 150px;
 }
