@@ -1,7 +1,7 @@
 
 
 body {
-  background: #587E20;
+  background: #51aeff;
   color: white;
   font-size: 22px;
 }
@@ -14,7 +14,7 @@ img {
 }
 
 body {
-font-family: 'Lucida Sans Unicode', sans-serif;
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
 
 #toc {
@@ -28,13 +28,13 @@ font-family: 'Lucida Sans Unicode', sans-serif;
   bottom: 1em;
   right: 1em;
   background: white;
-  color: #587E20;
+  color: #51aeff;
   padding: 1em;
   font-size: 0.7em;
 }
 
 a {
-  color: yellow;
+  color: #b051ff;
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ a:hover {
 }
 
 #toc a {
-  color: #587E20;
+  color: #51aeff;
   text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ figcaption {
 
 .highlight {
   background: yellow;
-  color: #587E20;
+  color: #51aeff;
 }
 
 h1 {
@@ -79,11 +79,11 @@ h1 {
 }
 
 h2 {
-	font-family: 'Staatliches', cursive;
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
   background: white;
   padding: 0.5em;
   font-weight: normal;
-  color: #587E20;
+  color: #51aeff;
   margin-top: 2em;
 }
 
