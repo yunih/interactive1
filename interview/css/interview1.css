@@ -34,7 +34,7 @@ body {
 }
 
 a {
-  color: #b051ff;
+  color: b051ff;
   text-decoration: none;
 }
 
@@ -79,6 +79,7 @@ h1 {
 }
 
 h2 {
+  text-decoration: underline;
   font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
   background: white;
   padding: 0.5em;
