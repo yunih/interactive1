@@ -1,0 +1,163 @@
+
+/* reset styles */
+* { margin: 0px; padding: 0px; }
+
+/* make the background of the page black */
+body { background: black;}
+
+/* mickey canvas */
+#canvas {
+  width: 400px;
+  height: 600px;
+  position: relative;
+  background: white;
+}
+
+/* shapes */
+/* make all divs inside of #canvas a circle */
+#canvas div{
+  border-radius: 200px;
+  position: absolute;
+}
+
+/* 
+adjust the top and left 
+properties of the elements
+to position them 
+*/
+
+#ear-1 {
+  width: 110px;
+  height: 110px;
+  background: black;
+
+  top: 100px;
+  left: 20px;
+  transition: 1s ease;
+}
+
+#ear-1:hover{
+  top:0px;
+}
+
+#ear-2 {
+  width: 110px;
+  height: 110px;
+  background: black;
+  bottom: 470px;
+  left: 120px;
+  transition: 2s ease;
+}
+
+#ear-2:hover{
+  bottom: 10px;
+}
+
+#head-1 {
+  width: 165px;
+  height: 165px;
+  background: black;
+
+  top: 100px;
+  left: 103px;
+}
+
+#head-2 {
+  width: 135px;
+  height: 140px;
+  background: beige;
+
+  top: 120px;
+  left: 130px;
+}
+
+#eye-1 {
+  width: 25px;
+  height: 25px;
+  background: black;
+
+  top: 160px;
+  left: 171px;
+}
+
+#eye-2 {
+  width: 25px;
+  height: 25px;
+  background: black;
+
+  top: 160px;
+  left: 220px;
+}
+
+#nose {
+  width: 32px;
+  height: 24px;
+  background: black;
+
+  top: 180px;
+  left: 203px;
+}
+
+#nose_white {
+  width: 8px;
+  height: 8px;
+  background: white;
+
+  top: 183px;
+  left: 222px;
+}
+
+#mouth {
+  width: 35px;
+  height: 22px;
+  background: red;
+
+  top: 220px;
+  left: 188px;
+}
+
+#body {
+  width: 160px;
+  height: 160px;
+  background: red;
+
+  top: 260px;
+  left: 190px;
+}
+
+#button-1 {
+  width: 25px;
+  height: 32px;
+  background: white;
+
+  top: 325px;
+  left: 257px;
+}
+
+#button-2 {
+  width: 25px;
+  height: 32px;
+  background: white;
+
+  top: 319px;
+  left: 303px;
+}
+
+
+#foot-1 {
+  width: 150px;
+  height: 125px;
+  background: yellow;
+
+  top: 390px;
+  left: 75px;
+}
+
+#foot-2 {
+  width: 150px;
+  height: 130px;
+  background: yellow;
+
+  top: 440px;
+  left: 225px;
+}
