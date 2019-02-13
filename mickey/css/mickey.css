@@ -114,6 +114,10 @@ to position them
 
   top: 220px;
   left: 188px;
+  transition: height 3s;
+}
+#mouth:hover{
+height: 300px;
 }
 
 #body {
@@ -123,6 +127,11 @@ to position them
 
   top: 260px;
   left: 190px;
+  transition: 2s ease;
+}
+
+#body:hover{
+  left: 10px;
 }
 
 #button-1 {
