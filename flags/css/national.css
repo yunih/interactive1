@@ -1,0 +1,42 @@
+
+/* reset styles */
+* {
+        margin: 0px; padding: 0px;
+}
+
+/* make the background of the page black */
+body {
+        background: black;
+}
+
+/* flag canvas */
+#canvas {
+        width: 500px;
+        height: 300px;
+        position: relative;
+        background: white;
+}
+
+#square_tr{
+        width: 100px;
+      height: 100px;
+      background: red;
+}
+
+#square_tl{
+        width: 100px;
+      height: 100px;
+      background: red;
+}
+
+#square_lr {
+      width: 200px;
+      height: 100px;
+      background: red;
+    }
+    
+#square_ll {
+      width: 200px;
+      height: 100px;
+      background: red;
+    }
