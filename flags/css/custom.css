@@ -1,0 +1,60 @@
+
+/* reset styles */
+* {
+        margin: 0px; padding: 0px;
+}
+
+/* make the background of the page black */
+
+body {
+        background: #8e8e8e;
+}
+
+
+/* flag canvas */
+#canvas {
+        width: 500px;
+        height: 300px;
+        position: relative;
+        background: white;
+}
+
+#square_topR{    
+      width: 335px;
+      height: 137px;
+      background: red;
+      position: absolute;
+
+      top: 0px;
+      right: 0px
+}
+
+#square_topL{
+        width: 137px;
+      height: 137px;
+      background: black;
+      position: absolute;
+
+      top: 0px;
+      left: 0px;
+}
+
+#square_lowR {
+      width: 335px;
+      height: 137px;
+      background: red;
+      position: absolute;
+
+      bottom: 0px;
+      right: 0px;
+    }
+
+#square_lowL {
+         width: 137px;
+      height: 137px;
+      background: black;
+      position: absolute;
+
+      bottom: 0px;
+      left: 0px;
+}
