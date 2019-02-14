@@ -19,21 +19,6 @@ body {
 
 /* shapes */
 
-#white_circle{
-	    width: 150px;
-        height: 150px;
-        background: white;
-        border-radius: 75px;
-}
-
-#circle{
-	    width: 150px;
-        height: 150px;
-        background: white;
-        border-radius: 75px;
-}
-
-
 #square_topR{    
       width: 335px;
       height: 137px;
@@ -72,5 +57,19 @@ body {
 
       bottom: 0px;
       left: 0px;
+}
+
+#white_circle{
+	    width: 150px;
+        height: 150px;
+        background: white;
+        border-radius: 75px;
+}
+
+#circle{
+	    width: 150px;
+        height: 150px;
+        background: white;
+        border-radius: 75px;
 }
 
