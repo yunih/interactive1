@@ -82,27 +82,39 @@ body {
 }
 
 #stroke1{
-    width: 500px;
+    width: 335px;
     height: 10px;
     background: white;
-    top: 20px;
+
+    position: absolute;
+    top: 34px;
+    right: 0px;
 }
 
 #stroke2{
-    width: 500px;
+    width: 287px;
     height: 10px;
     background: white;
-    top: 20px;
+
+    position: absolute;
+    top: 86px;
+    right: 0px;
 }
 #stroke3{
-    width: 500px;
+    width: 285px;
     height: 10px;
     background: white;
-    top: 20px;
+
+    position: absolute;
+    top: 204px;
+    right: 0px;
 }
 #stroke4{
-    width: 500px;
+    width: 335px;
     height: 10px;
     background: white;
-    top: 20px;
+
+    position: absolute;
+    top: 258px;
+    right: 0px;
 }
