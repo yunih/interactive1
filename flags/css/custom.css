@@ -5,11 +5,9 @@
 }
 
 /* make the background of the page black */
-
 body {
         background: #8e8e8e;
 }
-
 
 /* flag canvas */
 #canvas {
@@ -19,10 +17,27 @@ body {
         background: white;
 }
 
+/* shapes */
+
+#white_circle{
+	    width: 150px;
+        height: 150px;
+        background: white;
+        border-radius: 75px;
+}
+
+#circle{
+	    width: 150px;
+        height: 150px;
+        background: white;
+        border-radius: 75px;
+}
+
+
 #square_topR{    
       width: 335px;
       height: 137px;
-      background: red;
+      background: black;
       position: absolute;
 
       top: 0px;
@@ -32,7 +47,7 @@ body {
 #square_topL{
         width: 137px;
       height: 137px;
-      background: black;
+      background: red;
       position: absolute;
 
       top: 0px;
@@ -42,7 +57,7 @@ body {
 #square_lowR {
       width: 335px;
       height: 137px;
-      background: red;
+      background: black;
       position: absolute;
 
       bottom: 0px;
@@ -52,9 +67,10 @@ body {
 #square_lowL {
          width: 137px;
       height: 137px;
-      background: black;
+      background: red;
       position: absolute;
 
       bottom: 0px;
       left: 0px;
 }
+
