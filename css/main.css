@@ -58,4 +58,9 @@ h1{font-size: 80px;}
 h3 {font-size: 25px;}
 
 
+.instagram:hover{
+  color: black;
+  background: pink;
+}
+
 
