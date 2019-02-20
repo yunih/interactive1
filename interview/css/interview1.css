@@ -17,11 +17,6 @@ body {
   font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
 
-#toc {
-  position: fixed;
-  bottom: 1em;
- right: 1em;
-}
 
 #toc {
   position: fixed;
