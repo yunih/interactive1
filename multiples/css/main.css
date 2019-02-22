@@ -5,12 +5,25 @@
     box-sizing: border-box;
 }
 body {
-    background: black;
+    background: #71cbe7;
 }
 #desktop {
-    display: inline;
-    color: white;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+    display: flex;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+
 }
+img {
+    width: 50vw;
+    height: 50vw;
+}
+
 #tablet,
 #mobile,
 #print {
@@ -19,10 +32,15 @@ body {
 /* tablet */
 @media (min-width: 670px) and (max-width: 1024px) {
     body {
-        background: grey;
+        background: #18829b;
     }
     #tablet {
-        display: inline;
+        display: flex;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          width: 100vw;
+    height: 100vh;
         color: white;
     }
     #desktop,
@@ -34,11 +52,16 @@ body {
 /* mobile */
 @media (max-width: 670px) {
     body {
-        background: white;
+        background: black;
     }
     #mobile {
-        display: inline;
-        color: black;
+        display: flex;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          width: 100vw;
+    height: 100vh;
+        color: red;
     }
     #desktop,
     #tablet,
@@ -52,7 +75,12 @@ body {
         background: white;
     }
     #print {
-        display: inline;
+        display: flex;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          width: 100vw;
+    height: 100vh;
         color: black;
     }
     #desktop,
