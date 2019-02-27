@@ -8,7 +8,8 @@ body {
     background: #41cfe1;
 }
 #desktop {
-    display: block;
+      display: flex;
+
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -24,6 +25,14 @@ img {
     height: 50vw;
 }
 
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+
+    min-height: 100vh;
+}
+
 #tablet,
 #mobile,
 #print {
@@ -35,7 +44,7 @@ img {
         background: #2e4482;
     }
     #tablet {
-      display: block;
+      display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -65,7 +74,7 @@ img {
         background: #03070d;
     }
     #mobile {
-      display: block;
+      display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -95,11 +104,6 @@ img {
         background: #fecfd9;
     }
     #print {
-      /*display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;*/
-
         display: flex;
           justify-content: center;
           flex-direction: column;
