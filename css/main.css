@@ -65,6 +65,8 @@ h3 {font-size: 25px;}
 
 button {
   font-size: 20px;
+  padding: 10px 24px;
+  border-radius: 12px;
    transition-duration: 0.4s;
 }
 
