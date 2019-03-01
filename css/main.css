@@ -64,3 +64,14 @@ h3 {font-size: 25px;}
 }
 
 
+body.colorful {
+  background: linear-gradient(124deg, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3);
+  background-size: 1800% 1800%;
+  animation: rainbow 18s ease infinite;
+}
+
+@keyframes rainbow { 
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
