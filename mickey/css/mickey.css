@@ -9,8 +9,10 @@ body { background: black;}
 #canvas {
   width: 400px;
   height: 600px;
-  position: relative;
+  position: absolute;
   background: white;
+   top:0;bottom:0;right:0;left:0;
+ margin:auto;
 }
 
 /* shapes */
@@ -18,8 +20,6 @@ body { background: black;}
 #canvas div{
   border-radius: 200px;
     position:absolute;
- top:0;bottom:0;right:0;left:0;
- margin:auto;
 }
 
 /* 
