@@ -1,4 +1,6 @@
-
+* {
+        margin: 0px; padding: 0px;
+}
 
 body {
 	background: black;
@@ -9,53 +11,129 @@ div {
     align-items: center;
     justify-content: center;  
 
-    min-width: 100vw;
 }
+
+
+
+/*hr.zig, hr.zag {
+  border: none;
+  height: 30px;
+  margin: 0px;
+display: flex;
+    justify-content: center;
+          flex-direction: column;
+          text-align: center;
+
+}
+
+hr.zig{
+  background: linear-gradient(-135deg, #FFF 20px, 
+  rgba(0, 0, 0, 0) 0) 0 5px, 
+  linear-gradient(135deg, #FFF 20px, rgba(0, 0, 0, 0) 0) 0 5px;
+
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 40px;
+  z-index: 100;
+  position: relative;
+}
+
+hr.zag {
+  background: linear-gradient(-135deg, #333 20px, 
+  rgba(0, 0, 0, 0) 0) 0 5px, 
+  linear-gradient(135deg, #333 20px, #FFF 0) 0 5px;
+
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 20px 40px;
+  z-index: 50;
+  margin-top: -28px;
+}
+*/
+
+#tup1{
+	width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-bottom: 64px solid white;
+
+          position:absolute;
+ top:0;bottom:0;right:0;left:0;
+ margin:auto;
+}
+
 
 #line1{
-	width: 335px;
-    height: 10px;
+	width: 100vw;
+    height: 40px;
     background: white;
-   
+
+        position:absolute;
+ top:0;bottom:0;right:0;left:0;
+ margin:auto;
 }
 
-#zigzag{
-	$height: 16px;
-$halfheight: ($height/2);
-$thickness: 110%; // increase to make the line thicker
-$offset: 4px;
-$backgroundcolor: #F7F2E2;
-$linecolor: #F7A9B9;
+#line1:hover {
+	-webkit-animation: vibrate 0.3s linear infinite both;
+	        animation: vibrate 0.3s linear infinite both;
 }
 
-#zigzag {
-	margin: 7.5% 0;
-	background: $backgroundcolor;
-	position: relative;
-	height: $height;
-	z-index: 1;
-	&:before,
-	&:after {
-		content: "";
-		display: block;
-		position: absolute;
-		left: 0;
-  		right: 0;
-	}
-	&:before {
-		height: ($height - $offset);
-		top: $thickness;
-		background: linear-gradient(-135deg, $linecolor $halfheight, transparent 0) 0 $halfheight, linear-gradient( 135deg, $linecolor $halfheight, transparent 0) 0 $halfheight;
-		background-position: top left;
-		background-repeat: repeat-x;
-		background-size: $height $height;
-	}
-	&:after {
-		height: $height;
-		top: 100%;
-		background: linear-gradient(-135deg, $backgroundcolor $halfheight, transparent 0) 0 $halfheight, linear-gradient( 135deg, $backgroundcolor $halfheight, transparent 0) 0 $halfheight;
-		background-position: top left;
-		background-repeat: repeat-x;
-		background-size: $height $height;
-	}
+@-webkit-keyframes vibrate {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  60% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
+@keyframes vibrate {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  60% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+
+
+
