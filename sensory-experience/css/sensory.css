@@ -3,7 +3,7 @@
 }
 
 body {
-	background: black;
+	background: #fdbeb5;
 }
 
 div {
@@ -53,23 +53,25 @@ hr.zag {
 }
 */
 
-#tup1{
-	width: 0;
-      height: 0;
-      border-left: 30px solid transparent;
-      border-right: 30px solid transparent;
-      border-bottom: 64px solid white;
+img {
+	max-width:30vw;
+	top:300px;
+	left:20px;
 
-          position:absolute;
- top:0;bottom:0;right:0;left:0;
- margin:auto;
+        position:absolute;
+ bottom:10;
+ margin:auto;	
 }
+
+img:hover {
+-webkit-animation: vibrate 0.3s linear infinite both;
+	animation: vibrate 0.3s linear infinite both;}
 
 
 #line1{
 	width: 100vw;
     height: 40px;
-    background: white;
+    background: #06f9ff;
 
         position:absolute;
  top:0;bottom:0;right:0;left:0;
