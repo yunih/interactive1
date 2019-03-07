@@ -14,71 +14,36 @@ div {
 }
 
 
-
-/*hr.zig, hr.zag {
-  border: none;
-  height: 30px;
-  margin: 0px;
-display: flex;
-    justify-content: center;
-          flex-direction: column;
-          text-align: center;
-
-}
-
-hr.zig{
-  background: linear-gradient(-135deg, #FFF 20px, 
-  rgba(0, 0, 0, 0) 0) 0 5px, 
-  linear-gradient(135deg, #FFF 20px, rgba(0, 0, 0, 0) 0) 0 5px;
-
-  background-color: rgba(0, 0, 0, 0);
-  background-position: center bottom;
-  background-repeat: repeat-x;
-  background-size: 20px 40px;
-  z-index: 100;
-  position: relative;
-}
-
-hr.zag {
-  background: linear-gradient(-135deg, #333 20px, 
-  rgba(0, 0, 0, 0) 0) 0 5px, 
-  linear-gradient(135deg, #333 20px, #FFF 0) 0 5px;
-
-  background-color: rgba(0, 0, 0, 0);
-  background-position: center bottom;
-  background-repeat: repeat-x;
-  background-size: 20px 40px;
-  z-index: 50;
-  margin-top: -28px;
-}
-*/
-
 img {
-	max-width:30vw;
-	top:300px;
-	left:20px;
+	max-width:25vw;
+	top:270px;
+	left:-300px;
 
         position:absolute;
- bottom:10;
  margin:auto;	
+ transition: 5s ease-in-out;
 }
+
 
 img:hover {
 -webkit-animation: vibrate 0.3s linear infinite both;
-	animation: vibrate 0.3s linear infinite both;}
+	animation: vibrate 0.3s linear infinite both;
+  left: 1500px;
+}
+
 
 
 #line1{
 	width: 100vw;
     height: 40px;
-    background: #06f9ff;
+    background: black;
 
         position:absolute;
  top:0;bottom:0;right:0;left:0;
  margin:auto;
 }
 
-#line1:hover {
+#line1 {
 	-webkit-animation: vibrate 0.3s linear infinite both;
 	        animation: vibrate 0.3s linear infinite both;
 }
@@ -89,20 +54,20 @@ img:hover {
             transform: translate(0);
   }
   20% {
-    -webkit-transform: translate(2px, -2px);
-            transform: translate(2px, -2px);
+    -webkit-transform: translate(3px, -3px);
+            transform: translate(3px, -3px);
   }
   40% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px);
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px);
   }
   60% {
-    -webkit-transform: translate(-2px, 2px);
-            transform: translate(-2px, 2px);
+    -webkit-transform: translate(-3px, 3px);
+            transform: translate(-3px, 3px);
   }
   80% {
-    -webkit-transform: translate(-2px, -2px);
-            transform: translate(-2px, -2px);
+    -webkit-transform: translate(-3px, -3px);
+            transform: translate(-3px, -3px);
   }
   100% {
     -webkit-transform: translate(0);
@@ -115,20 +80,20 @@ img:hover {
             transform: translate(0);
   }
   20% {
-    -webkit-transform: translate(2px, -2px);
-            transform: translate(2px, -2px);
+    -webkit-transform: translate(3px, -3px);
+            transform: translate(3px, -3px);
   }
   40% {
-    -webkit-transform: translate(2px, 2px);
-            transform: translate(2px, 2px);
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px);
   }
   60% {
-    -webkit-transform: translate(-2px, 2px);
-            transform: translate(-2px, 2px);
+    -webkit-transform: translate(-3px, 3px);
+            transform: translate(-3px, 3px);
   }
   80% {
-    -webkit-transform: translate(-2px, -2px);
-            transform: translate(-2px, -2px);
+    -webkit-transform: translate(-3px, -3px);
+            transform: translate(-3px, -3px);
   }
   100% {
     -webkit-transform: translate(0);
