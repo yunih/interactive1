@@ -3,14 +3,14 @@
 }
 
 body {
-	background: #fdbeb5;
+	background: #ff9f6f;
 }
 
 div {
     display: flex;
     align-items: center;
     justify-content: center;  
-
+    height: 100vh;
 }
 
 
@@ -116,3 +116,24 @@ position: absolute;
 }
 
 
+.color {
+  animation: change 8s alternate infinite ease;
+}
+
+ @keyframes change{ 
+      0%{
+      background:#dfffff; }
+
+      25% {
+      background:#def7f2; 
+      }
+
+      50% {
+        background: #d8fcfd;
+      }
+
+      100% { 
+      background:#c0e6ed; 
+      }
+
+    }
