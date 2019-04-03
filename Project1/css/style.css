@@ -1,0 +1,45 @@
+body {
+  margin: 50px 100px 100px 100px;
+  background-color: gray;
+}
+
+
+.head {
+  text-align: center;
+  border-style: solid;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 200px 350px 200px;
+  grid-template-rows: repeat(10, 200px);
+  grid-gap: 25px 20px;
+}
+
+img {
+  max-width: 180px;
+  align-items: center;
+}
+
+/*
+.grid-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+
+#music-text #floppy-text {
+  display: none;
+}
+
+#music-text.show #floppy-text {
+  display: block;
+}
