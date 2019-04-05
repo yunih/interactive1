@@ -1,6 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');*/
 @import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
 /*.custom {
 cursor: url('project1/css/pointer.png'), pointer;
 }*/
@@ -9,7 +10,8 @@ cursor: url('project1/css/pointer.png'), pointer;
 body {
   margin: 50px 220px 220px 220px;
   background-color: gray;
-  font-family: 'Roboto Slab', serif;
+  /*font-family: 'Roboto Slab', serif;*/
+  font-family: 'Share Tech Mono', monospace;
   border-style: solid;
   cursor: url('file:///Users/yunahwang/Desktop/CCA/int/interactive1/Project1/image/point3.png'), pointer;
 }
