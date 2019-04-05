@@ -1,13 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
-
+@import url('https://fonts.googleapis.com/css?family=VT323');
 /*.custom {
 cursor: url('project1/css/pointer.png'), pointer;
 }*/
 
 
 body {
-  margin: 50px 100px 100px 100px;
+  margin: 50px 220px 220px 220px;
   background-color: gray;
   font-family: 'Roboto Slab', serif;
   border-style: solid;
@@ -19,6 +19,12 @@ body {
   text-align: center;
   border-style: solid;
   padding: 10px;
+  font-family: 'VT323', monospace;
+  font-size: 50px;
+}
+
+h1{
+  font-family: 'VT323', monospace;
 }
 
 .grid-item {
@@ -30,9 +36,10 @@ body {
 .grid-container {
   display: grid;
   justify-content: center;
-  grid-template-columns: 200px 350px 200px;
+  grid-template-columns: 200px 400px 200px;
   grid-template-rows: repeat(10, 200px);
-  grid-gap: 25px 20px;
+  grid-gap: 20px 20px;
+  padding: 10px;
 }
 
 img {
@@ -45,6 +52,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px;
 }
 
 #music-text {
