@@ -1,11 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
+/*.custom {
+cursor: url('project1/css/pointer.png'), pointer;
+}*/
+
 
 body {
   margin: 50px 100px 100px 100px;
   background-color: gray;
   font-family: 'Roboto Slab', serif;
+  border-style: solid;
+  cursor: url('file:///Users/yunahwang/Desktop/CCA/int/interactive1/Project1/image/point3.png'), pointer;
 }
 
 
