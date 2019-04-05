@@ -1,6 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+
 body {
   margin: 50px 100px 100px 100px;
   background-color: gray;
+  font-family: 'Roboto Slab', serif;
 }
 
 
@@ -12,7 +17,7 @@ body {
 
 .grid-item {
   background-color: lightblue;
-  border: 1px solid black;
+  border: /*1px solid black;*/ none;
 }
 
 
@@ -29,17 +34,84 @@ img {
   align-items: center;
 }
 
-/*
+
 .grid-item{
   display: flex;
   align-items: center;
   justify-content: center;
-}*/
+}
 
-#music-text #floppy-text {
+#music-text {
   display: none;
 }
-
-#music-text.show #floppy-text {
+#music-text.show {
   display: block;
 }
+
+#floppy-text {
+  display: none;
+}
+#floppy-text.show {
+  display: block;
+}
+
+#cd-text {
+  display: none;
+}
+#cd-text.show {
+  display: block;
+}
+
+#minidisc-text {
+  display: none;
+}
+#minidisc-text.show {
+  display: block;
+}
+
+#compactflash-text {
+  display: none;
+}
+#compactflash-text.show {
+  display: block;
+}
+
+#dvd-text {
+  display: none;
+}
+#dvd-text.show {
+  display: block;
+}
+
+#multimedia-text {
+  display: none;
+}
+#multimedia-text.show {
+  display: block;
+}
+
+#microdrive-text {
+  display: none;
+}
+#microdrive-text.show {
+  display: block;
+}
+
+#sdcard-text {
+  display: none;
+}
+#sdcard-text.show {
+  display: block;
+}
+
+#cds-text {
+  display: none;
+}
+#cds-text.show {
+  display: block;
+}
+
+
+
+
+
