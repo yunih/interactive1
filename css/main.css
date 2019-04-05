@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
     /* reset styles */
     
     * {
@@ -49,13 +49,16 @@ p{
 li {font-family: 'Dosis', sans-serif;
 font-size: 20px;}
 
-h1,h2,h3{
+h1,h2{
   font-family: Futura,Trebuchet MS,Arial,sans-serif; 
   font-weight: normal;}
 
 h1{font-size: 80px;}
 
-h3 {font-size: 25px;}
+
+h3 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 25px;}
 
 
 .instagram:hover{
@@ -64,8 +67,9 @@ h3 {font-size: 25px;}
 }
 
 button {
+  font-family: 'Share Tech Mono', monospace;
   font-size: 20px;
-  padding: 10px 24px;
+  padding: 10px 14px;
   border-radius: 12px;
    transition-duration: 0.4s;
 }
