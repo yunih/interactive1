@@ -10,7 +10,10 @@
 </head>
 
 <body>
-<div class="head">DATA STORAGE</div>
+
+<div class="head">
+<img src="image/dots.png">______DATA STORAGE</div>
+
 
 <div class="grid-container">
   <div class="grid-item"><h1>1960s</h1></div>
@@ -18,7 +21,8 @@
 		<p id="music-text"> Philips introduced the compact audio cassette in 1963. Philips originally intended to use the audio cassette for dictation machines; however, it became a popular method for distributing prerecorded music. In 1979, Sony’s Walkman helped transformed the use of the audio cassette tape, which became widely used and popular. </p>
   </div>
   <div class="grid-item">
-  	<img src="image/tape.png">
+  	<img src="image/tape.png" id="tape-image">
+    <p id="tapeMB">660 KB</p>
   </div>
 
   <div class="grid-item"><h1>1970</h1></div>
@@ -26,7 +30,8 @@
   	<p id="floppy-text"> IBM started its development of an inexpensive system geared towards loading microcode into the System/370 mainframes. As a result, the 8-inch floppy emerged. A floppy disk, a portable storage device made of magnetic film encased in plastic, made it easier and faster to store data. </p>
   </div>
   <div class="grid-item">
-  	<img src="image/Floppy-Disk.png">
+  	<img src="image/Floppy-Disk.png" id="floppy-image">
+    <p id="floppyMB">1.44 MB</p>
   </div>
 
   <div class="grid-item"><h1>1980s</h1></div>
@@ -34,7 +39,8 @@
   	<p id="cd-text"> During the 1960s, James T. Russel thought of using light to record and replay music. As a result, he invented the optical digital television recording and playback television in 1970; however, nobody took to his invention. In 1975, Philips representatives visited Russel at his lab. They paid Russel millions for him to develop the compact disc (CD). In 1980, Russel completed the project and presented it to Sony. </p>
   </div>
   <div class="grid-item">
-  	<img src="image/CD.png">
+  	<img src="image/CD.png" id="cd-image">
+    <p id="cdMB">737 MB</p>
   </div>
 
   <div class="grid-item"><h1>1990s</h1></div>
@@ -42,7 +48,8 @@
   	<p id="minidisc-text"> The MiniDisc stored any kind of digital data; however, it was predominately used for audio. Sony introduced MiniDisc technology in 1991. In 1992, Philip’s introduced the Digital Compact Cassette System (DCC). MiniDisc was intended to replace the audio cassette tape before it eventually phased out in 1996. </p>
   </div>
   <div class="grid-item">
-  	<img src="image/Minidisc.jpg">
+  	<img src="image/Minidisc.jpg" id="minidisc-image">
+    <p id="minidiscMB">1 GB</p>
   </div>
 
   <div class="grid-item"><h1>1994</h1></div>
@@ -50,7 +57,8 @@
   	<p id="compactflash-text"> CompactFlash (CF), also known as “flash drives,” used flash memory in an enclosed disc to save digital data. CF devices are used in digital cameras and computers to store digital information. </p>
   </div>
   <div class="grid-item">
-  	<img src="image/compactflash.png">
+  	<img src="image/compactflash.png" id="compactflash-image">
+    <p id="compactflashMB">512 GB</p>
   </div>
 
   <div class="grid-item"><h1>1995</h1></div>
@@ -58,7 +66,8 @@
   	<p id="dvd-text"> DVD became the next generation of digital disc storage. DVD, a bigger and faster alternative to the compact disc, serves to store multimedia data. </p>
   </div>
   <div class="grid-item">
-  	<img src="image/DVD.png">
+  	<img src="image/DVD.png" id="dvd-image">
+    <p id="dvdMB">single = 4.7 GB <br>double-sided = 9.4 GB</p>
   </div>
 
   <div class="grid-item"><h1>1997</h1></div>
@@ -66,7 +75,8 @@
   	<p id="multimedia-text"> The Multimedia Card (MMC) uses a flash memory card standard to house digital data. It was introduced by Siemen’s and SanDisk in 1997. </p>
   </div>
   <div class="grid-item">
-  	<img src="image/multimedia-card.png">
+  	<img src="image/multimedia-card.png" id="multimedia-image">
+    <p id="multimediaMB">128 MB <br> 256 MB <br> 512 MB</p>
   </div>
 
   <div class="grid-item"><h1>1999</h1></div>
@@ -74,7 +84,8 @@
   	<p id="microdrive-text"> A USB Flash Drive uses a NAND-type flash memory to store digital data. A USB Flash Drive plugs into the USP interface on standard computers. </p>
   </div>
   <div class="grid-item">
-  	<img src="image/usb.png">
+  	<img src="image/usb.png" id="usb-image">
+    <p id="usbMB">1 TB</p>
   </div>
 
   <div class="grid-item"><h1>2000s</h1></div>
@@ -82,7 +93,8 @@
   	<p id="sdcard-text"> The Secure Digital (SD) flash memory format incorporates DRM encryption features that allow for faster file transfers. Standard SD cards measure 32 millimeters by 32 millimeters by 2.1 millimeters. A typical SD card stores digital media for a portable device. </p>
   </div>
   <div class="grid-item">
-  	<img src="image/sdcard.png">
+  	<img src="image/sdcard.png" id="sdcard-image">
+    <p id="sdcardMB">32 GB to 2 TB</p>
   </div>
 
   <div class="grid-item"><h1>Today</h1></div>
@@ -90,7 +102,8 @@
   	<p id="cds-text"> Improvements in internet bandwidth and the falling cost of storage capacity means it’s frequently more economical for business and individuals to outsource their data storage to the cloud, rather than buying, maintaining and replacing their own hardware. Cloud offers near-infinite scalability, and the anywhere/everywhere data access that users increasingly expect. </p>
   </div>
   <div class="grid-item">
-  	<img src="image/cloud.png">
+  	<img src="image/cloud.png" id="cds-image">
+    <p id="cdsMB">1 EB</p>
   </div>
 
 </div>
@@ -114,6 +127,19 @@
         $('#music-text').css("display", "none");
       });
 });
+$(document).ready(function(){
+      $('#tape-image').click(function(){
+        $('#tapeMB').css("display", "block");
+        $('#tape-image').css("display", "none");
+      });
+});
+ $(document).ready(function(){
+      $('#tapeMB').click(function(){
+        $('#tape-image').css("display", "block");
+        $('#tapeMB').css("display", "none");
+      });
+});
+
 
 
     $(document).ready(function(){
@@ -128,6 +154,21 @@
         $('#floppy-text').css("display", "none");
       });
 });
+$(document).ready(function(){
+      $('#floppy-image').click(function(){
+        $('#floppyMB').css("display", "block");
+        $('#floppy-image').css("display", "none");
+      });
+});
+ $(document).ready(function(){
+      $('#floppyMB').click(function(){
+        $('#floppy-image').css("display", "block");
+        $('#floppyMB').css("display", "none");
+      });
+});
+
+
+
 
 
 $(document).ready(function(){
@@ -142,6 +183,21 @@ $(document).ready(function(){
         $('#cd-text').css("display", "none");
       });
 });
+$(document).ready(function(){
+      $('#cd-image').click(function(){
+        $('#cdMB').css("display", "block");
+        $('#cd-image').css("display", "none");
+      });
+});
+ $(document).ready(function(){
+      $('#cdMB').click(function(){
+        $('#cd-image').css("display", "block");
+        $('#cdMB').css("display", "none");
+      });
+});
+
+
+
 
     $(document).ready(function(){
       $('#minidisc-title').click(function(){
@@ -155,6 +211,21 @@ $(document).ready(function(){
         $('#minidisc-text').css("display", "none");
       });
 });
+$(document).ready(function(){
+      $('#minidisc-image').click(function(){
+        $('#minidiscMB').css("display", "block");
+        $('#minidisc-image').css("display", "none");
+      });
+});
+ $(document).ready(function(){
+      $('#minidiscMB').click(function(){
+        $('#minidisc-image').css("display", "block");
+        $('#minidiscMB').css("display", "none");
+      });
+});
+
+
+
 
         $(document).ready(function(){
       $('#compactflash-titie').click(function(){
@@ -168,6 +239,20 @@ $(document).ready(function(){
         $('#compactflash-text').css("display", "none");
       });
 });
+$(document).ready(function(){
+      $('#compactflash-image').click(function(){
+        $('#compactflashMB').css("display", "block");
+        $('#compactflash-image').css("display", "none");
+      });
+});
+ $(document).ready(function(){
+      $('#compactflashMB').click(function(){
+        $('#compactflash-image').css("display", "block");
+        $('#compactflashMB').css("display", "none");
+      });
+});
+
+
 
 
   $(document).ready(function(){
@@ -182,6 +267,21 @@ $(document).ready(function(){
         $('#dvd-text').css("display", "none");
       });
 });
+$(document).ready(function(){
+      $('#dvd-image').click(function(){
+        $('#dvdMB').css("display", "block");
+        $('#dvd-image').css("display", "none");
+      });
+});
+ $(document).ready(function(){
+      $('#dvdMB').click(function(){
+        $('#dvd-image').css("display", "block");
+        $('#dvdMB').css("display", "none");
+      });
+});
+
+
+
 
     $(document).ready(function(){
       $('#multimedia-title').click(function(){
@@ -195,6 +295,21 @@ $(document).ready(function(){
         $('#multimedia-text').css("display", "none");
       });
 });
+$(document).ready(function(){
+      $('#multimedia-image').click(function(){
+        $('#multimediaMB').css("display", "block");
+        $('#multimedia-image').css("display", "none");
+      });
+});
+ $(document).ready(function(){
+      $('#multimediaMB').click(function(){
+        $('#multimedia-image').css("display", "block");
+        $('#multimedia-image').css("display", "none");
+      });
+});
+
+
+
 
     $(document).ready(function(){
       $('#microdrive-title').click(function(){
@@ -208,6 +323,21 @@ $(document).ready(function(){
         $('#microdrive-text').css("display", "none");
       });
 });
+$(document).ready(function(){
+      $('#usb-image').click(function(){
+        $('#usbMB').css("display", "block");
+        $('#usb-image').css("display", "none");
+      });
+});
+ $(document).ready(function(){
+      $('#usbMB').click(function(){
+        $('#usb-image').css("display", "block");
+        $('#usbMB').css("display", "none");
+      });
+});
+
+
+
 
     $(document).ready(function(){
       $('#sdcard-title').click(function(){
@@ -221,6 +351,21 @@ $(document).ready(function(){
         $('#sdcard-text').css("display", "none");
       });
 });
+$(document).ready(function(){
+      $('#sdcard-image').click(function(){
+        $('#sdcardMB').css("display", "block");
+        $('#sdcard-image').css("display", "none");
+      });
+});
+ $(document).ready(function(){
+      $('#sdcardMB').click(function(){
+        $('#sdcard-image').css("display", "block");
+        $('#sdcardMB').css("display", "none");
+      });
+});
+
+
+
 
     $(document).ready(function(){
       $('#cds-title').click(function(){
@@ -234,6 +379,20 @@ $(document).ready(function(){
         $('#cds-text').css("display", "none");
       });
 });
+ $(document).ready(function(){
+      $('#cds-image').click(function(){
+        $('#cdsMB').css("display", "block");
+        $('#cds-image').css("display", "none");
+      });
+});
+ $(document).ready(function(){
+      $('#cdsMB').click(function(){
+        $('#cds-image').css("display", "block");
+        $('#cdsMB').css("display", "none");
+      });
+});
+
+
   </script>  
 
 </body>

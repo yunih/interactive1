@@ -8,7 +8,7 @@ cursor: url('project1/css/pointer.png'), pointer;
 
 
 body {
-  margin: 50px 220px 220px 220px;
+  margin: 50px 15vw 20vh 15vw;
   background-color: gray;
   /*font-family: 'Roboto Slab', serif;*/
   font-family: 'Share Tech Mono', monospace;
@@ -18,7 +18,7 @@ body {
 
 
 .head {
-  text-align: center;
+  /*text-align: center;*/
   border-style: solid;
   padding: 10px;
   font-family: 'VT323', monospace;
@@ -127,7 +127,73 @@ img {
   display: block;
 }
 
+#tapeMB {
+  display: none;
+}
+#tapeMB.show {
+  display: block;
+}
 
+#floppyMB {
+  display: none;
+}
+#floppyMB.show {
+  display: block;
+}
 
+#cdMB {
+  display: none;
+}
+#cdMB.show {
+  display: block;
+}
 
+#minidiscMB {
+  display: none;
+}
+#minidiscMB.show {
+  display: block;
+}
+
+#compactflashMB {
+  display: none;
+}
+#compactflashMB.show {
+  display: block;
+}
+
+#dvdMB {
+  display: none;
+}
+#dvdMB.show {
+  display: block;
+}
+
+#multimediaMB {
+  display: none;
+}
+#multimediaMB.show {
+  display: block;
+}
+
+#usbMB {
+  display: none;
+}
+#usbMB.show {
+  display: block;
+}
+
+#sdcardMB {
+  display: none;
+}
+#sdcardMB.show {
+  display: block;
+}
+
+#cdsMB {
+  display: none;
+}
+#cdsMB.show {
+  display: block;
+}
 
