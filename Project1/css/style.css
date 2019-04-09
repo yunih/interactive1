@@ -6,11 +6,14 @@
 cursor: url('project1/css/pointer.png'), pointer;
 }*/
 
+/*body {
+    background-image: url("image/bg.png") 100vh 100vw;
+  background-size: cover;
+}*/
 
 body {
-  margin: 50px 15vw 20vh 15vw;
+  margin: 50px 15vw 20vh 18vw;
   background-color: gray;
-  /*font-family: 'Roboto Slab', serif;*/
   font-family: 'Share Tech Mono', monospace;
   border-style: solid;
   cursor: url('file:///Users/yunahwang/Desktop/CCA/int/interactive1/Project1/image/point3.png'), pointer;
@@ -30,8 +33,8 @@ h1{
 }
 
 .grid-item {
-  background-color: lightblue;
-  border: /*1px solid black;*/ none;
+  background-color: none;
+  border: none;
 }
 
 
@@ -57,143 +60,289 @@ img {
   padding: 15px;
 }
 
+.flip-horizontal-bottom {
+  -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
+}
+
+.tracking-in-contract-bck {
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
+}
+
+@-webkit-keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+  }
+}
+@keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+  }
+}
+
+@-webkit-keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+
 #music-text {
   display: none;
+   -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 #music-text.show {
   display: block;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 
 #floppy-text {
   display: none;
+   -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 #floppy-text.show {
   display: block;
+    -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 
 #cd-text {
   display: none;
+    -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 #cd-text.show {
   display: block;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 
 #minidisc-text {
   display: none;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 #minidisc-text.show {
   display: block;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 
 #compactflash-text {
   display: none;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 #compactflash-text.show {
   display: block;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 
 #dvd-text {
   display: none;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 #dvd-text.show {
   display: block;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 
 #multimedia-text {
   display: none;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 #multimedia-text.show {
   display: block;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 
 #microdrive-text {
   display: none;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 #microdrive-text.show {
   display: block;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 
 #sdcard-text {
   display: none;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 #sdcard-text.show {
   display: block;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 
 #cds-text {
   display: none;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 #cds-text.show {
   display: block;
+  -webkit-animation: tracking-in-contract-bck 1s;
+          animation: tracking-in-contract-bck 1s;
 }
 
 #tapeMB {
   display: none;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 #tapeMB.show {
   display: block;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 
 #floppyMB {
   display: none;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 #floppyMB.show {
   display: block;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 
 #cdMB {
   display: none;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 #cdMB.show {
   display: block;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 
 #minidiscMB {
   display: none;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 #minidiscMB.show {
   display: block;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 
 #compactflashMB {
   display: none;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 #compactflashMB.show {
   display: block;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 
 #dvdMB {
   display: none;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 #dvdMB.show {
   display: block;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 
 #multimediaMB {
   display: none;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 #multimediaMB.show {
   display: block;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 
 #usbMB {
   display: none;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 #usbMB.show {
   display: block;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 
 #sdcardMB {
   display: none;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 #sdcardMB.show {
   display: block;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 
 #cdsMB {
   display: none;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 #cdsMB.show {
   display: block;
+    -webkit-animation: flip-horizontal-bottom 0.4s;
+          animation: flip-horizontal-bottom 0.4s;
 }
 
