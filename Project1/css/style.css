@@ -420,7 +420,7 @@ img {
 
 @keyframes animStar {
   from {
-    transform: translateY(0px);
+    transform: translateY(500px);
   }
 
   to {
