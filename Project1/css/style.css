@@ -12,18 +12,17 @@ cursor: url('project1/css/pointer.png'), pointer;
 }*/
 
 body {
-  margin: 50px 15vw 20vh 18vw;
  /* background-image: url(../image/bg.png);
   background-repeat: no-repeat;
   height: 100vh;*/
   background-color: gray;
   font-family: 'Share Tech Mono', monospace;
-  border-style: solid;
   cursor: url('file:///Users/yunahwang/Desktop/CCA/int/interactive1/Project1/image/Untitled-3.png'), pointer;
 }
 
 
 .head {
+  margin: 50px 15vw 0vh 15vw;
   /*text-align: center;*/
   border-style: solid;
   padding: 10px;
@@ -53,6 +52,7 @@ h2{
 
 
 .grid-container {
+  margin: 0px 15vw 10vh 15vw;  
   display: grid;
   justify-content: center;
   grid-template-columns: 200px 400px 200px;
@@ -60,6 +60,7 @@ h2{
   grid-gap: 20px 20px;
   padding: 10px;
   background-color: white;
+  border-style: solid;
 }
 
 img {
