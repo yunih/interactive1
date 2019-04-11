@@ -17,7 +17,7 @@ body {
   height: 100vh;*/
   background-color: #7070cc;
   font-family: 'Share Tech Mono', monospace;
-  cursor: url('file:///Users/yunahwang/Desktop/CCA/int/interactive1/Project1/image/Untitled-3.png'), pointer;
+  cursor: url('../image/Untitled-3.png'), pointer;
 }
 
 
