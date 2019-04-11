@@ -375,7 +375,7 @@ img {
 
 
 
-#stars {
+/*#stars {
   width: 5px;
   height: 5px;
   background: transparent;
@@ -434,5 +434,5 @@ img {
   to {
     transform: translateY(-2000px);
   }
-}
+}*/
 
