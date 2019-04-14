@@ -20,6 +20,29 @@ body {
   cursor: url('../image/Untitled-3.png'), pointer;
 }
 
+#tape-image:hover, 
+#music-title:hover,
+#floppy-title:hover,
+#floppy-image:hover,
+#cd-title:hover,
+#cd-image:hover,
+#minidisc-title:hover,
+#minidisc-image:hover,
+#compactflash-titie:hover,
+#compactflash-image:hover,
+#dvd-title:hover,
+#dvd-image:hover,
+#multimedia-title:hover,
+#multimedia-image:hover,
+#microdrive-title:hover,
+#usb-image:hover,
+#sdcard-title:hover,
+#sdcard-image:hover,
+#cds-title:hover,
+#cds-image:hover {
+  cursor: pointer;
+}
+
 
 .head {
   margin: 50px 15vw 0vh 15vw;
