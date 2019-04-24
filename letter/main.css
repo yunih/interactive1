@@ -37,25 +37,33 @@ vertical stroke in
 classes 
 */
 
-#A .vertical.left {
-	left: 0px;
-	top: 0px;
+#A .up.triangle {
+	polygon (50% 0, 0 70%, 100% 70%)
+	 width: 0;
+      height: 10px;
+      border-top: 0px solid transparent;
+      border-left: 90px solid transparent;
+      border-right: 90px solid transparent;
+      border-bottom: 100px solid red;
 }
 
-#A .vertical.right {
-	right: 0px;
-	top: 0px;
+#A .left.triangle {
+	 width: 0;
+      height: 0;
+      border-top: 70px solid red;
+      border-right: 90px solid transparent;
+      position: absolute;
 }
 
-#A .horizontal.top {
-	top: 0px;
-	left: 0px;
-}
+#A .right.triangle {
+	width: 0;
+      height: 0;
+      border-top: 70px solid red;
+      border-left: 90px solid transparent;
+      margin-left: 90px;
+      position: absolute;
+ }
 
-#A .horizontal.middle {
-	top: 120px;
-	left: 0px;
-}
 
 /* 
 
