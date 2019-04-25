@@ -11,142 +11,50 @@ body {
 	border: solid;
 }
 
-/* pieces */
 
-.vertical {
-	width: 60px;
-	height: 100%;
-	background: red;
-	position: absolute;
-}
-
-.horizontal {
-	width: 100%;
-	height: 60px;
-	background: red;	
-	position: absolute;
-}
-
-
-/* A */
-
-/* 
-style the left 
-vertical stroke in 
-'A' by combining 
-classes 
-*/
+/*A*/
 
 #A .up.triangle {
-	polygon (50% 0, 0 70%, 100% 70%)
-	 width: 0;
-      height: 10px;
-      border-top: 0px solid transparent;
-      border-left: 90px solid transparent;
-      border-right: 90px solid transparent;
-      border-bottom: 100px solid red;
+	width: 180px;
+  height: 180px;
+  background: orange;
+	clip-path: polygon(50% 0%, 0 70%, 100% 70%);
+	position: absolute;
 }
 
-#A .left.triangle {
-	 width: 0;
-      height: 0;
-      border-top: 70px solid red;
-      border-right: 90px solid transparent;
-      position: absolute;
+#A .mid.left {
+	width: 180px;
+  height: 180px;
+  background: orange;
+position: absolute;
+clip-path: polygon(0 70%, 0 90%, 50% 70%);
+
 }
 
-#A .right.triangle {
-	width: 0;
-      height: 0;
-      border-top: 70px solid red;
-      border-left: 90px solid transparent;
-      margin-left: 90px;
-      position: absolute;
+#A .mid.right {
+	width: 180px;
+  height: 180px;
+  background: orange;
+position: absolute;
+clip-path: polygon(50% 70%, 100% 90%, 100% 70%);
  }
 
-
-/* 
-
-#A .vertical {
-	background-image: repeating-linear-gradient(to right, transparent, transparent 5px, #fff 5px, #fff 7px, transparent 7px);		
-}
-
-#A .horizontal {
-	background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, #fff 5px, #fff 7px, transparent 7px);		
-}
-
-*/
-
-/* B */
-
-#B .horizontal, #B .vertical{
-	background: blue;	
-}
-
-#B .vertical.left {
-	left: 0px;
-	top: 0px;
-}
-
-#B .vertical.right {
-	right: 0px;
-	top: 0px;
-	border-top-right-radius: 50px;	
-	border-bottom-right-radius: 50px;
-}
-
-#B .horizontal.top {
-	top: 0px;
-	left: 0px;
-	border-top-right-radius: 50px;
-}
-
-#B .horizontal.middle {
-	top: 120px;
-	left: 0px;
-}
-
-#B .horizontal.bottom {
-	bottom: 0px;
-	left: 0px;
-	border-bottom-right-radius: 50px;
-}
-
-#B .b-intersect {
-	width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-right: 20px solid #fff;
-    border-bottom: 15px solid transparent;
-    
+#A .bottom.left {
+	width: 180px;
+    height: 180px;
+    background: orange;
     position: absolute;
-    
-    top: 135px;
-    right: 0px;
+	clip-path: polygon(0 90%, 20% 100%, 50% 70%);
+}
+
+#A .bottom.right {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    clip-path: polygon(100% 90%, 80% 100%, 50% 70%);
 }
 
 
-/*
-#B .horizontal{
-	background: magenta;
-	mix-blend-mode: multiply;
-}
+/*B*/
 
-#B .vertical {
-	background: cyan;
-	mix-blend-mode: screen;
-}
-*/
-
-
-/* Alternative A using Multiple Gradients */
-
-#alt-a {
-	background: black;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(to right, white 1px, transparent 0px), radial-gradient(white 0%, black 70%);
-    background-size: 200px 140px, 200px 200px;
-    background-position: 99px 160px, 0px 0px;
-    border-radius: 100px 100px 0px 0px;
-}
 
