@@ -57,4 +57,20 @@ clip-path: polygon(50% 70%, 100% 90%, 100% 70%);
 
 /*B*/
 
+#B .left.ver {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(0 0, 0% 100%, 50% 50%);
+}
+
+#B .top.left {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(0 0, 50% 50%, 20% 0);
+}
+
 
