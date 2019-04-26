@@ -323,3 +323,67 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
     position: absolute;
     clip-path: polygon(70% 50%, 100% 85%, 100% 50%);
 }
+
+/*H*/
+
+#H .left {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(0 0, 0 100%, 50% 50%);
+}
+
+#H .right {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+}
+
+#H .mid.top {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(30% 30%, 70% 30%, 50% 50%);
+}
+
+#H .mid.bottom {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(70% 70%, 30% 70%, 50% 50%);
+}
+
+/*I*/
+
+#I .left {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(30% 0, 30% 100%, 70% 100%);
+}
+
+#I .right {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(30% 0, 70% 0, 70% 100%);
+}
+
+/*J*/
+
+
+
+
+
+
+
+
+
+
