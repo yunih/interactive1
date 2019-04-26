@@ -190,11 +190,31 @@ clip-path: polygon(50% 70%, 100% 90%, 100% 70%);
 	clip-path: polygon(60% 70%, 30% 50%, 30% 100%);
 }
 
+/*E*/
 
+#E .mid {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+	clip-path: polygon(70% 50%, 0 0, 0 100%);
+}
 
+#E .top {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+	clip-path: polygon(42% 30%, 0 0, 60% 0);
+}
 
-
-
+#E .bottom {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+	clip-path: polygon(42% 70%, 0 100%, 60% 100%);
+}
 
 
 
