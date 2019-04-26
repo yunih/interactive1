@@ -378,12 +378,69 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 
 /*J*/
 
+#J .top.left {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(30% 0, 70% 0, 30% 70%);
+}
 
+#J .right.triangle {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(70% 100%, 70% 0, 30% 70%);
+}
 
+#J .bottom.mid {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(70% 100%, 20% 100%, 30% 70%);
+}
 
+#J .bottom.left {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(0 80%, 0 30%, 30% 70%);
+}
 
+#J .mid.left {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(0 80%, 20% 100%, 30% 70%);
+}
 
+/*K*/
 
+#K .left {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(0 0, 0 100%, 30% 50%);
+}
 
+#K .top {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(0 0, 70% 0, 30% 50%);
+}
 
+#K .bottom {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(0 100%, 70% 100%, 30% 50%);
+}
 
