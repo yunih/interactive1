@@ -96,3 +96,107 @@ clip-path: polygon(50% 70%, 100% 90%, 100% 70%);
     position: absolute;
 	clip-path: polygon(70% 70%, 50% 100%, 50% 50%);
 }
+
+
+/*C*/
+
+#C .top.left {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(30% 50%, 0 30%, 30% 0);
+}
+
+#C .top.right {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(30% 50%, 70% 0, 30% 0);
+}
+
+#C .mid {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+	clip-path: polygon(30% 50%, 0 70%, 0 30%);
+}
+
+#C .bottom.left {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(30% 50%, 0 70%, 30% 100%);
+}
+
+#C .bottom.right {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+     clip-path: polygon(30% 50%, 70% 100%, 30% 100%);
+}
+
+/*D*/
+
+#D .top.left {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(0 0, 30% 0, 0 50%);
+}
+
+#D .mid.left {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(30% 0, 0 50%, 30% 100%);
+}
+
+#D .bottom.left {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(0 100%, 0 50%, 30% 100%);
+}
+
+#D .top.right {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+	clip-path: polygon(30% 0, 30% 50%, 60% 30%);
+}
+
+#D .mid.right {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+	clip-path: polygon(60% 70%, 30% 50%, 60% 30%);
+}
+
+#D .bottom.right {
+	width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+	clip-path: polygon(60% 70%, 30% 50%, 30% 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
