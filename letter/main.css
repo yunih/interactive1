@@ -522,4 +522,52 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
     clip-path: polygon(100% 100%, 30% 70%, 100% 0);
 }
 
+/*O*/
+
+#O .hexagon {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+/*P*/
+
+#P .left {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(0 0, 0% 100%, 30% 70%);
+}
+
+#P .mid.top {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(0 0, 50% 0, 30% 70%);
+}
+
+#P .top.right {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(70% 30%, 50% 0, 30% 70%);
+}
+
+#P .bottom {
+    width: 180px;
+    height: 180px;
+    background: orange;
+    position: absolute;
+    clip-path: polygon(0 100%, 30% 100%, 30% 70%);
+}
+
+
+
+
+
 
