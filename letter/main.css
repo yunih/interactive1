@@ -15,6 +15,7 @@ body {
   grid-template-columns: repeat(6, 180px);
   grid-template-rows: repeat(6, 180px);
   grid-gap: 2px 2px;
+  justify-content: center;
 }
 
 
@@ -25,7 +26,8 @@ body {
 	position: relative;
 	display: inline-block;
 	margin: 0px;
-	border: solid;
+	border: solid 3px;
+    border-color: #1c2f45;
 }
 
 .flip-vertical-left {
@@ -55,12 +57,20 @@ body {
 }
 
 
+.fill {
+    width: 180px;
+    height: 180px;
+    background: #8a959b;
+    position: absolute;
+}
+
+
 /*A*/
 
 #A .up.triangle {
 	width: 180px;
   height: 180px;
-  background: orange;
+  background: #28a91c;
 	clip-path: polygon(50% 0%, 0 70%, 100% 70%);
 	position: absolute;
 }
@@ -68,7 +78,7 @@ body {
 #A .mid.left {
 	width: 180px;
   height: 180px;
-  background: orange;
+  background: #bfdb81;
 position: absolute;
 clip-path: polygon(0 70%, 0 90%, 50% 70%);
 }
@@ -76,7 +86,7 @@ clip-path: polygon(0 70%, 0 90%, 50% 70%);
 #A .mid.right {
 	width: 180px;
   height: 180px;
-  background: orange;
+  background: #bfdb81;
 position: absolute;
 clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
  }
@@ -84,7 +94,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #A .bottom.left {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(50% 70%, 0 90%, 20% 100%);
 }
@@ -92,7 +102,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #A .bottom.right {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(50% 70%, 100% 90%, 80% 100%);
 }
@@ -110,17 +120,12 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 
 /*B*/
 
-.fill {
-    width: 180px;
-    height: 180px;
-    background: blue;
-    position: absolute;
-}
+
 
 #B .left.ver {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff3e82;
     position: absolute;
     clip-path: polygon(0 0, 0% 100%, 50% 50%);
 }
@@ -128,7 +133,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #B .top.left {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #facccc;
     position: absolute;
     clip-path: polygon(0 0, 50% 50%, 20% 0);
 }
@@ -136,7 +141,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #B .top.right{
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff3e82;
     position: absolute;
     clip-path: polygon(20% 0, 50% 50%, 60% 30%);
 }
@@ -144,7 +149,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #B .bottom.left {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #facccc;
     position: absolute;
     clip-path: polygon(0 100%, 50% 100%, 50% 50%);
 }
@@ -152,7 +157,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #B .bottom.right {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff3e82;
     position: absolute;
 	clip-path: polygon(70% 70%, 50% 100%, 50% 50%);
 }
@@ -171,7 +176,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #C .top.left {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #99d2ee;
     position: absolute;
     clip-path: polygon(30% 50%, 0 30%, 30% 0);
 }
@@ -179,7 +184,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #C .top.right {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
     clip-path: polygon(30% 50%, 70% 0, 30% 0);
 }
@@ -187,7 +192,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #C .mid {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
 	clip-path: polygon(30% 50%, 0 70%, 0 30%);
 }
@@ -195,7 +200,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #C .bottom.left {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #99d2ee;
     position: absolute;
     clip-path: polygon(30% 50%, 0 70%, 30% 100%);
 }
@@ -203,17 +208,27 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #C .bottom.right {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
      clip-path: polygon(30% 50%, 70% 100%, 30% 100%);
 }
+
+#C:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#C:hover div.fill{
+    opacity: 0;
+}
+
 
 /*D*/
 
 #D .top.left {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(0 0, 30% 0, 0 50%);
 }
@@ -221,7 +236,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #D .mid.left {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(30% 0, 0 50%, 30% 100%);
 }
@@ -229,7 +244,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #D .bottom.left {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(0 100%, 0 50%, 30% 100%);
 }
@@ -237,7 +252,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #D .top.right {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
 	clip-path: polygon(30% 0, 30% 50%, 60% 30%);
 }
@@ -245,7 +260,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #D .mid.right {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
 	clip-path: polygon(60% 70%, 30% 50%, 60% 30%);
 }
@@ -253,17 +268,27 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #D .bottom.right {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
 	clip-path: polygon(60% 70%, 30% 50%, 30% 100%);
 }
+
+#D:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#D:hover div.fill{
+    opacity: 0;
+}
+
 
 /*E*/
 
 #E .mid {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #facccc;
     position: absolute;
 	clip-path: polygon(70% 50%, 0 0, 0 100%);
 }
@@ -271,7 +296,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #E .top {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #e60000;
     position: absolute;
 	clip-path: polygon(42% 30%, 0 0, 60% 0);
 }
@@ -279,17 +304,27 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #E .bottom {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #e60000;
     position: absolute;
 	clip-path: polygon(42% 70%, 0 100%, 60% 100%);
 }
+
+#E:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#E:hover div.fill{
+    opacity: 0;
+}
+
 
 /*F*/
 
 #F .top.left {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(0 30%, 0 0, 70% 0);
 
@@ -298,7 +333,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #F .mid.top {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #d0b2ff;
     position: absolute;
     clip-path: polygon(0 30%, 40% 30%, 40% 13%);
 }
@@ -306,7 +341,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #F .mid.left {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
 	clip-path: polygon(0 30%, 0 100%, 70% 30%);
 }
@@ -314,16 +349,26 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #F .bottom.right {
 	width: 180px;
     height: 180px;
-    background: orange;
+    background: #d0b2ff;
     position: absolute;
 	clip-path: polygon(40% 100%, 0 100%, 40% 60%);
 }
+
+#F:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#F:hover div.fill{
+    opacity: 0;
+}
+
 
 /*G*/
 #G .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(50% 0, 100% 0, 30% 50%);
 }
@@ -331,7 +376,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #G .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #d0b2ff;
     position: absolute;
     clip-path: polygon(50% 0, 0 30%, 30% 50%);
 }
@@ -339,7 +384,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #G .mid.triangle {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(0 70%, 0 30%, 30% 50%);
 }
@@ -347,7 +392,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #G .bottom.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #d0b2ff;
     position: absolute;
     clip-path: polygon(0 70%, 30% 100%, 30% 50%);
 }
@@ -355,7 +400,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #G .bottom.mid {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(80% 100%, 30% 100%, 30% 50%);
 }
@@ -363,7 +408,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #G .bottom.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #d0b2ff;
     position: absolute;
     clip-path: polygon(80% 100%, 100% 85%, 70% 50%);
 }
@@ -371,9 +416,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #G .mid.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(70% 50%, 100% 85%, 100% 50%);
+}
+
+#G:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#G:hover div.fill{
+    opacity: 0;
 }
 
 /*H*/
@@ -381,7 +435,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #H .left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #e60000;
     position: absolute;
     clip-path: polygon(0 0, 0 100%, 50% 50%);
 }
@@ -389,7 +443,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #H .right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #e60000;
     position: absolute;
     clip-path: polygon(100% 0, 100% 100%, 50% 50%);
 }
@@ -397,7 +451,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #H .mid.top {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #facccc;
     position: absolute;
     clip-path: polygon(30% 30%, 70% 30%, 50% 50%);
 }
@@ -405,9 +459,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #H .mid.bottom {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #facccc;
     position: absolute;
     clip-path: polygon(70% 70%, 30% 70%, 50% 50%);
+}
+
+#H:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#H:hover div.fill{
+    opacity: 0;
 }
 
 /*I*/
@@ -415,7 +478,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #I .left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(30% 0, 30% 100%, 70% 100%);
 }
@@ -423,17 +486,27 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #I .right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(30% 0, 70% 0, 70% 100%);
 }
+
+#I:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#I:hover div.fill{
+    opacity: 0;
+}
+
 
 /*J*/
 
 #J .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
     clip-path: polygon(30% 0, 70% 0, 30% 70%);
 }
@@ -441,7 +514,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #J .right.triangle {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #99d2ee;
     position: absolute;
     clip-path: polygon(70% 100%, 70% 0, 30% 70%);
 }
@@ -449,7 +522,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #J .bottom.mid {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
     clip-path: polygon(70% 100%, 20% 100%, 30% 70%);
 }
@@ -457,7 +530,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #J .bottom.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
     clip-path: polygon(0 80%, 0 30%, 30% 70%);
 }
@@ -465,17 +538,27 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #J .mid.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #99d2ee;
     position: absolute;
     clip-path: polygon(0 80%, 20% 100%, 30% 70%);
 }
+
+#J:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#J:hover div.fill{
+    opacity: 0;
+}
+
 
 /*K*/
 
 #K .left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fec4c4;
     position: absolute;
     clip-path: polygon(0 0, 0 100%, 30% 50%);
 }
@@ -483,7 +566,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #K .top {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff3e82;
     position: absolute;
     clip-path: polygon(0 0, 70% 0, 30% 50%);
 }
@@ -491,17 +574,27 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #K .bottom {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff3e82;
     position: absolute;
     clip-path: polygon(0 100%, 70% 100%, 30% 50%);
 }
+
+#K:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#K:hover div.fill{
+    opacity: 0;
+}
+
 
 /*L*/
 
 #L .left.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(0 0, 30% 70%, 30% 0);
 }
@@ -509,7 +602,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #L .mid.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(0 0, 30% 70%, 0 100%);
 }
@@ -517,7 +610,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #L .bottom.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(70% 100%, 30% 70%, 0 100%);
 }
@@ -525,17 +618,27 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #L .bottom.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(70% 100%, 30% 70%, 100% 70%);
 }
+
+#L:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#L:hover div.fill{
+    opacity: 0;
+}
+
 
 /*M*/
 
 #M .left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(0 0, 50% 50%, 0 100%);
 }
@@ -543,7 +646,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #M .bottom {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(100% 100%, 50% 50%, 0 100%);
 }
@@ -551,9 +654,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #M .right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(100% 100%, 50% 50%, 100% 0);
+}
+
+#M:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#M:hover div.fill{
+    opacity: 0;
 }
 
 /*N*/
@@ -561,7 +673,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #N .left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fec4c4;
     position: absolute;
     clip-path: polygon(0 0, 70% 30%, 0 100%);
 }
@@ -569,19 +681,38 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #N .right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff3e82;
     position: absolute;
     clip-path: polygon(100% 100%, 30% 70%, 100% 0);
 }
+
+#N:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#N:hover div.fill{
+    opacity: 0;
+}
+
 
 /*O*/
 
 #O .hexagon {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+#O:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#O:hover div.fill{
+    opacity: 0;
 }
 
 /*P*/
@@ -589,7 +720,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #P .left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(0 0, 0% 100%, 30% 70%);
 }
@@ -597,7 +728,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #P .mid.top {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(0 0, 50% 0, 30% 70%);
 }
@@ -605,7 +736,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #P .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(70% 30%, 50% 0, 30% 70%);
 }
@@ -613,17 +744,27 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #P .bottom {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(0 100%, 30% 100%, 30% 70%);
 }
+
+#P:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#P:hover div.fill{
+    opacity: 0;
+}
+
 
 /*Q*/
 
 #Q .left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #facccc;
     position: absolute;
     clip-path: polygon(0 0, 40% 80%, 0 80%);
 
@@ -632,7 +773,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Q .mid {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #e60000;
     position: absolute;
     clip-path: polygon(0 0, 40% 80%, 80% 0);
 }
@@ -640,7 +781,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Q .right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #facccc;
     position: absolute;
     clip-path: polygon(80% 80%, 40% 80%, 80% 0);
 }
@@ -648,9 +789,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Q .bottom {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #e60000;
     position: absolute;
     clip-path: polygon(80% 80%, 40% 80%, 100% 100%);
+}
+
+#Q:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#Q:hover div.fill{
+    opacity: 0;
 }
 
 /*R*/
@@ -658,7 +808,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #R .left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #d0b2ff;
     position: absolute;
     clip-path: polygon(0 0, 0 100%, 70% 100%);
 }
@@ -666,7 +816,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #R .mid {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(0 0, 40% 0, 40% 57%);
 }
@@ -674,9 +824,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #R .right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #d0b2ff;
     position: absolute;
     clip-path: polygon(70% 30%, 40% 0, 40% 57%);
+}
+
+#R:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#R:hover div.fill{
+    opacity: 0;
 }
 
 /*S*/
@@ -684,7 +843,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #S .top {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(30% 0, 65% 35%, 100% 0);
 }
@@ -692,7 +851,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #S .mid.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #d0b2ff;
     position: absolute;
     clip-path: polygon(30% 0, 30% 70%, 100% 70%);
 }
@@ -700,7 +859,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #S .mid.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(30% 0, 30% 70%, 0 35%);
 }
@@ -708,7 +867,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #S .bottom.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(65% 100%, 30% 70%, 100% 70%);
 }
@@ -716,9 +875,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #S .bottom.left{
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #d0b2ff;
     position: absolute;
     clip-path: polygon(65% 100%, 30% 70%, 0 100%);
+}
+
+#S:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#S:hover div.fill{
+    opacity: 0;
 }
 
 /*T*/
@@ -726,7 +894,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #T .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #e60000;
     position: absolute;
     clip-path: polygon(0 0, 50% 0, 0 30%);
 }
@@ -734,7 +902,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #T .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #e60000;
     position: absolute;
     clip-path: polygon(100% 0, 50% 0, 100% 30%);
 }
@@ -742,7 +910,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #T .top.mid {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #facccc;
     position: absolute;
     clip-path: polygon(0 30%, 50% 0, 100% 30%);
 }
@@ -750,7 +918,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #T .bottom.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #e60000;
     position: absolute;
     clip-path: polygon(30% 30%, 70% 30%, 70% 100%);
 }
@@ -758,9 +926,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #T .bottom.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #facccc;
     position: absolute;
     clip-path: polygon(30% 30%, 30% 100%, 70% 100%);
+}
+
+#T:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#T:hover div.fill{
+    opacity: 0;
 }
 
 /*U*/
@@ -768,7 +945,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #U .mid.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(0 0, 0 90%, 30% 70%);
 }
@@ -776,7 +953,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #U .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(0 0, 15% 0, 30% 70%);
 }
@@ -784,7 +961,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #U .bottom.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(10% 100%, 0 90%, 30% 70%);
 }
@@ -792,7 +969,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #U .left.triangle {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(10% 100%, 50% 100%, 30% 70%);
 }
@@ -800,7 +977,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #U .bottom.mid {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(70% 70%, 50% 100%, 30% 70%);
 }
@@ -808,7 +985,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #U .right.triangle {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(70% 70%, 50% 100%, 90% 100%);
 }
@@ -816,7 +993,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #U .bottom.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(70% 70%, 100% 90%, 90% 100%);
 }
@@ -824,7 +1001,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #U .mid.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(70% 70%, 100% 90%, 100% 0);
 }
@@ -832,9 +1009,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #U .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(70% 70%, 85% 0, 100% 0);
+}
+
+#U:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#U:hover div.fill{
+    opacity: 0;
 }
 
 /*V*/
@@ -842,7 +1028,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #V .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
     clip-path: polygon(0 0, 30% 0, 50% 70%);
 }
@@ -850,7 +1036,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #V .mid.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #99d2ee;
     position: absolute;
     clip-path: polygon(0 0, 40% 100%, 50% 70%);
 }
@@ -858,7 +1044,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #V .bottom {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
     clip-path: polygon(60% 100%, 40% 100%, 50% 70%);
 }
@@ -866,7 +1052,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #V .mid.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #99d2ee;
     position: absolute;
     clip-path: polygon(60% 100%, 100% 0, 50% 70%);
 }
@@ -874,17 +1060,27 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #V .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
     clip-path: polygon(70% 0, 100% 0, 50% 70%);
 }
+
+#V:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#V:hover div.fill{
+    opacity: 0;
+}
+
 
 /*W*/
 
 #W .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff3e82;
     position: absolute;
     clip-path: polygon(0 0, 20% 100%, 35% 30%);
 }
@@ -892,7 +1088,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #W .bottom.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fec4c4;
     position: absolute;
     clip-path: polygon(50% 60%, 20% 100%, 35% 30%);
 }
@@ -900,7 +1096,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #W .mid.bottom {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff3e82;
     position: absolute;
     clip-path: polygon(50% 60%, 65% 30%, 35% 30%);
 }
@@ -908,7 +1104,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #W .bottom.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fec4c4;
     position: absolute;
     clip-path: polygon(50% 60%, 65% 30%, 80% 100%);
 }
@@ -916,7 +1112,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #W .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff3e82;
     position: absolute;
     clip-path: polygon(100% 0, 65% 30%, 80% 100%);
 }
@@ -924,16 +1120,25 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #W .mid.top {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fec4c4;
     position: absolute;
     clip-path: polygon(50% 0, 65% 30%, 35% 30%);
+}
+
+#W:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#W:hover div.fill{
+    opacity: 0;
 }
 
 /*X*/
 #X .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(0 20%, 20% 0, 30% 50%);
 }
@@ -941,7 +1146,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #X .mid.top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(70% 50%, 20% 0, 30% 50%);
 }
@@ -949,7 +1154,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #X .mid.top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(80% 0, 70% 50%, 50% 30%);
 }
@@ -957,7 +1162,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #X .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(80% 0, 70% 50%, 100% 20%);
 }
@@ -965,7 +1170,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #X .bottom.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(70% 50%, 80% 100%, 100% 80%);
 }
@@ -973,7 +1178,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #X .mid.bottom.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(70% 50%, 80% 100%, 30% 50%);
 }
@@ -981,7 +1186,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #X .mid.bottom.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(50% 70%, 20% 100%, 30% 50%);
 }
@@ -989,9 +1194,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #X .bottom.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(0 80%, 20% 100%, 30% 50%);
+}
+
+#X:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#X:hover div.fill{
+    opacity: 0;
 }
 
 /*Y*/
@@ -999,7 +1213,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Y .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(0 0, 0 30%, 50% 30%);
 }
@@ -1007,7 +1221,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Y .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(100% 0, 100% 30%, 50% 30%);
 }
@@ -1015,7 +1229,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Y .mid.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(35% 70%, 0 30%, 50% 30%);
 }
@@ -1023,7 +1237,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Y .mid.triangle {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(35% 70%, 65% 70%, 50% 30%);
 }
@@ -1031,7 +1245,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Y .mid.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(100% 30%, 65% 70%, 50% 30%);
 }
@@ -1039,7 +1253,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Y .bottom.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(35% 100%, 65% 70%, 65% 100%);
 }
@@ -1047,9 +1261,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Y .bottom.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(35% 100%, 65% 70%, 35% 70%);
+}
+
+#Y:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#Y:hover div.fill{
+    opacity: 0;
 }
 
 /*Z*/
@@ -1057,7 +1280,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Z .top {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff3e82;
     position: absolute;
     clip-path: polygon(0 0, 100% 0, 30% 30%);
 }
@@ -1065,7 +1288,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Z .mid.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fec4c4;
     position: absolute;
     clip-path: polygon(70% 70%, 100% 0, 30% 30%);
 }
@@ -1073,7 +1296,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Z .mid.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff3e82;
     position: absolute;
     clip-path: polygon(70% 70%, 0 100%, 30% 30%);
 }
@@ -1081,16 +1304,25 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #Z .bottom {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fec4c4;
     position: absolute;
     clip-path: polygon(70% 70%, 0 100%, 100% 100%);
+}
+
+#Z:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#Z:hover div.fill{
+    opacity: 0;
 }
 
 /*1*/
 #one .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
     clip-path: polygon(20% 0, 20% 30%, 40% 30%);
 }
@@ -1098,7 +1330,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #one .top.mid {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #99d2ee;
     position: absolute;
     clip-path: polygon(20% 0, 55% 0, 40% 30%);
 }
@@ -1106,7 +1338,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #one .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
     clip-path: polygon(70% 20%, 55% 0, 40% 30%);
 }
@@ -1114,7 +1346,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #one .mid.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #99d2ee;
     position: absolute;
     clip-path: polygon(70% 20%, 70% 100%, 40% 30%);
 }
@@ -1122,17 +1354,27 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #one .bottom {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
     clip-path: polygon(40% 100%, 70% 100%, 40% 30%);
 }
+
+#one:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#one:hover div.fill{
+    opacity: 0;
+}
+
 
 /*2*/
 
 #two .bottom {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(0 100%, 100% 100%, 0 50%);
 }
@@ -1140,7 +1382,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #two .mid.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(50% 75%, 50% 30%, 0 50%);
 }
@@ -1148,7 +1390,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #two .mid.triangle{
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(50% 75%, 50% 30%, 100% 50%);
 }
@@ -1156,7 +1398,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #two .mid.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(100% 20%, 50% 30%, 100% 50%);
 }
@@ -1164,7 +1406,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #two .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(100% 20%, 50% 30%, 70% 0);
 }
@@ -1172,9 +1414,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #two .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(0 0, 50% 30%, 70% 0);
+}
+
+#two:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#two:hover div.fill{
+    opacity: 0;
 }
 
 /*3*/
@@ -1182,7 +1433,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #three .mid {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #e60000;
     position: absolute;
     clip-path: polygon(100% 0, 30% 50%, 100% 100%);
 }
@@ -1190,7 +1441,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #three .top {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #facccc;
     position: absolute;
     clip-path: polygon(100% 0, 35% 0, 53% 34%);
 }
@@ -1198,9 +1449,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #three .bottom {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #facccc;
     position: absolute;
     clip-path: polygon(54% 67%, 35% 100%, 100% 100%);
+}
+
+#three:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#three:hover div.fill{
+    opacity: 0;
 }
 
 /*4*/
@@ -1208,7 +1468,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #four .right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #d0b2ff;
     position: absolute;
     clip-path: polygon(100% 0, 20% 70%, 100% 70%);
 }
@@ -1216,7 +1476,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #four .left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(20% 0, 20% 70%, 59% 36%);
 }
@@ -1224,17 +1484,27 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #four .bottom {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(100% 70%, 100% 100%, 70% 70%);
 }
+
+#four:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#four:hover div.fill{
+    opacity: 0;
+}
+
 
 /*5*/
 
 #five .bottom {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #d0b2ff;
     position: absolute;
     clip-path: polygon(100% 50%, 0 100%, 100% 100%);
 }
@@ -1242,7 +1512,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #five .mid.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(100% 50%, 50% 30%, 50% 75%);
 }
@@ -1250,7 +1520,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #five .mid.triangle {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #d0b2ff;
     position: absolute;
     clip-path: polygon(0 50%, 50% 30%, 50% 75%);
 }
@@ -1258,7 +1528,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #five .mid.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(0 50%, 50% 30%, 0 20%);
 }
@@ -1266,7 +1536,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #five .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #d0b2ff;
     position: absolute;
     clip-path: polygon(20% 0, 50% 30%, 0 20%);
 }
@@ -1274,9 +1544,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #five .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #9245e3;
     position: absolute;
     clip-path: polygon(20% 0, 50% 30%, 100% 0);
+}
+
+#five:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#five:hover div.fill{
+    opacity: 0;
 }
 
 /*6*/
@@ -1284,7 +1563,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #six .left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #facccc;
     position: absolute;
     clip-path: polygon(0 0, 0 100%, 60% 100%);
 }
@@ -1292,9 +1571,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #six .right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #e60000;
     position: absolute;
     clip-path: polygon(60% 50%, 30% 50%, 60% 100%);
+}
+
+#six:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#six:hover div.fill{
+    opacity: 0;
 }
 
 /*7*/
@@ -1302,7 +1590,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #seven .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(0 0, 0 30%, 70% 30%);
 }
@@ -1310,7 +1598,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #seven .top.mid {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(0 0, 80% 0, 70% 30%);
 }
@@ -1318,7 +1606,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #seven .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(100% 30%, 80% 0, 70% 30%);
 }
@@ -1326,7 +1614,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #seven .bottom.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff7b08;
     position: absolute;
     clip-path: polygon(100% 30%, 30% 100%, 70% 30%);
 }
@@ -1334,9 +1622,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #seven .bottom.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fddcbf;
     position: absolute;
     clip-path: polygon(0 100%, 30% 100%, 70% 30%);
+}
+
+#seven:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#seven:hover div.fill{
+    opacity: 0;
 }
 
 /*8*/
@@ -1344,7 +1641,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #eight .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #99d2ee;
     position: absolute;
     clip-path: polygon(30% 0, 30% 40%, 70% 0);
 }
@@ -1352,7 +1649,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #eight .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
     clip-path: polygon(70% 40%, 30% 40%, 70% 0);
 }
@@ -1360,7 +1657,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #eight .bottom.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #99d2ee;
     position: absolute;
     clip-path: polygon(80% 40%, 20% 40%, 20% 100%);
 }
@@ -1368,9 +1665,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #eight .bottom.right{
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #3392cc;
     position: absolute;
     clip-path: polygon(80% 40%, 80% 100%, 20% 100%);
+}
+
+#eight:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#eight:hover div.fill{
+    opacity: 0;
 }
 
 /*9*/
@@ -1378,7 +1684,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #nine .right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #ff3e82;
     position: absolute;
     clip-path: polygon(40% 0, 100% 0, 100% 100%);
 }
@@ -1386,9 +1692,18 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #nine .left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #fec4c4;
     position: absolute;
     clip-path: polygon(40% 0, 70% 50%, 40% 50%);
+}
+
+#nine:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
+
+#nine:hover div.fill{
+    opacity: 0;
 }
 
 /*0*/
@@ -1396,7 +1711,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #zero .top.mid {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(35% 0, 50% 50%, 65% 0);
 }
@@ -1404,7 +1719,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #zero .top.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(35% 0, 50% 50%, 15% 20%);
 
@@ -1413,7 +1728,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #zero .top.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(85% 20%, 50% 50%, 65% 0);
 }
@@ -1421,7 +1736,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #zero .mid.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(15% 80%, 50% 50%, 15% 20%);
 }
@@ -1429,7 +1744,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #zero .mid.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(85% 80%, 50% 50%, 85% 20%);
 }
@@ -1437,7 +1752,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #zero .bottom.right {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(85% 80%, 50% 50%, 65% 100%);
 }
@@ -1445,7 +1760,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #zero .bottom.mid {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #28a91c;
     position: absolute;
     clip-path: polygon(35% 100%, 50% 50%, 65% 100%);
 }
@@ -1453,12 +1768,19 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #zero .bottom.left {
     width: 180px;
     height: 180px;
-    background: orange;
+    background: #bfdb81;
     position: absolute;
     clip-path: polygon(35% 100%, 50% 50%, 15% 80%);
 }
 
+#zero:hover {
+    -webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+            animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) reverse both;
+}
 
+#zero:hover div.fill{
+    opacity: 0;
+}
 
 
 
