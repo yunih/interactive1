@@ -2,7 +2,6 @@ body {
 	
 }
 
-
 .letter-left {
     top: calc(50vh - 10px);
     position: fixed;
@@ -37,17 +36,82 @@ body {
   transform: rotate(45deg);
 }
 
+.description {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
-/*html*/
+/*html - title   #zero:hover*/
+
+.disabled {
+  pointer-events: none;
+}
+
+
 .title {
     height: 100vh;
+}
+
+.title #O {
+    transform: scale(.5);
+}
+
+.title #R {
+    transform: scale(.5);
+}
+
+.title #I {
+    transform: scale(.5);
+}
+
+.title #G {
+    transform: scale(.5);
 }
 
 .title #A {
     transform: scale(.5);
 }
 
+.title #M {
+    transform: scale(.5);
+}
+
+.title #T {
+    transform: scale(.5);
+}
+
+.title #Y {
+    transform: scale(.5);
+}
+
+.title #P {
+    transform: scale(.5);
+}
+
+.title #E {
+    transform: scale(.5);
+}
+
+
+
+.top-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*html - body*/
 
 .grid-item {
   background-color: none;
@@ -1885,7 +1949,6 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #zero:hover div.fill{
     opacity: 0;
 }
-
 
 
 
