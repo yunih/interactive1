@@ -2442,7 +2442,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 .grid-container-p { 
   display: grid;
   grid-template-columns: repeat(12, 105px);
-  grid-template-rows: repeat(5, 105px);
+  grid-template-rows: repeat(6, 105px);
   grid-gap: 5px 2px;
   justify-content: center;
 }
