@@ -20,19 +20,31 @@ body {
 .square {
   width: 20px;
   height: 20px;
-  background: red;
+  background: #fec4c4;
   position: absolute;
 }
 
 .square:nth-child(3n) {
-  background: blue;
+  background: #99d2ee;
 }
 
 .square:nth-child(4n) {
-  background: yellow;
+  background: #bfdb81;
 }
 
-.square:nth-child(10n) {
+.square:nth-child(5n) {
+  background: #d0b2ff;
+}
+
+.square:nth-child(7n) {
+  background: #fddcbf;
+}
+
+.square:nth-child(11n) {
+  background: #facccc;
+}
+
+.square:nth-child(5n) {
   transform: rotate(45deg);
 }
 
@@ -1912,7 +1924,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #dot .left {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #e5e5e5;
     position: absolute;
     clip-path: polygon(40% 60%, 40% 80%, 60% 80%);
 }
@@ -1920,7 +1932,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #dot .right {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(40% 60%, 60% 60%, 60% 80%);
 }
@@ -1930,7 +1942,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #comma .left {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #e5e5e5;
     position: absolute;
     clip-path: polygon(40% 60%, 40% 80%, 60% 80%);
 }
@@ -1938,7 +1950,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #comma .right {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(40% 60%, 60% 60%, 60% 80%);
 }
@@ -1946,7 +1958,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #comma .bottom {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(50% 80%, 60% 90%, 60% 80%);
 }
@@ -1956,7 +1968,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #question .top.left {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(20% 30%, 50% 0, 50% 30%);
 }
@@ -1964,7 +1976,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #question .top.right {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #e5e5e5;
     position: absolute;
     clip-path: polygon(80% 30%, 50% 0, 50% 30%);
 }
@@ -1972,7 +1984,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #question .mid {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(80% 30%, 50% 60%, 50% 30%);
 }
@@ -1980,7 +1992,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #question .bottom.left {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(40% 90%, 50% 100%, 50% 80%);
 }
@@ -1988,7 +2000,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #question .bottom.right {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #e5e5e5;
     position: absolute;
     clip-path: polygon(60% 90%, 50% 100%, 50% 80%);
 }
@@ -1999,7 +2011,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #exclamation .top {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(40% 0, 60% 0, 50% 60%);
 }
@@ -2007,7 +2019,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #exclamation .left {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(40% 90%, 50% 100%, 50% 80%);
 }
@@ -2015,7 +2027,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #exclamation .right {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #e5e5e5;
     position: absolute;
     clip-path: polygon(60% 90%, 50% 100%, 50% 80%);
 }
@@ -2025,7 +2037,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #quotation-left .left.top {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(25% 10%, 25% 20%, 35% 20%);
 }
@@ -2033,7 +2045,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #quotation-left .left.mid {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(25% 40%, 25% 20%, 45% 40%);
 }
@@ -2041,7 +2053,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #quotation-left .left.bottom {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #e5e5e5;
     position: absolute;
     clip-path: polygon(45% 20%, 25% 20%, 45% 40%);
 }
@@ -2049,7 +2061,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #quotation-left .right.top {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(50% 10%, 50% 20%, 60% 20%);
 }
@@ -2057,7 +2069,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #quotation-left .right.mid {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(50% 40%, 50% 20%, 70% 40%);
 }
@@ -2065,7 +2077,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #quotation-left .right.bottom {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #e5e5e5;
     position: absolute;
     clip-path: polygon(70% 20%, 50% 20%, 70% 40%);
 }
@@ -2075,7 +2087,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #quotation-right .left.top {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #e5e5e5;
     position: absolute;
     clip-path: polygon(25% 10%, 25% 30%, 45% 30%);
 }
@@ -2083,7 +2095,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #quotation-right .left.mid {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(25% 10%, 45% 10%, 45% 30%);
 }
@@ -2091,7 +2103,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #quotation-right .left.bottom {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(35% 30%, 45% 40%, 45% 30%);
 }
@@ -2099,7 +2111,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #quotation-right .right.top {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #e5e5e5;
     position: absolute;
     clip-path: polygon(50% 10%, 50% 30%, 70% 30%);
 }
@@ -2107,7 +2119,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #quotation-right .right.mid {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(50% 10%, 70% 10%, 70% 30%);
 }
@@ -2115,7 +2127,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #quotation-right .right.bottom {
     width: 180px;
     height: 180px;
-    background: #bfdb81;
+    background: #8a959b;
     position: absolute;
     clip-path: polygon(70% 40%, 60% 30%, 70% 30%);
 }
