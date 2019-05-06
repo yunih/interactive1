@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+
 body {
 	
 }
+
 
 .letter-left {
     top: calc(50vh - 10px);
     position: fixed;
     left: 1em;
     transform: rotate(45deg);
+    font-family: 'Barrio', cursive;
 }
 
 .letter-right {
@@ -14,6 +18,7 @@ body {
     position: fixed;
     right: 1em;
     transform: rotate(-45deg);
+    font-family: 'Barrio', cursive;
 }
 
 /*js*/
@@ -2421,6 +2426,8 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Barrio', cursive;
+    font-size: 25px;
 }
 
 
