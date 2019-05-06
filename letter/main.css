@@ -26,6 +26,7 @@ body {
 
 .square:nth-child(3n) {
   background: #99d2ee;
+  transform: rotate(65deg);
 }
 
 .square:nth-child(4n) {
@@ -34,18 +35,25 @@ body {
 
 .square:nth-child(5n) {
   background: #d0b2ff;
+    transform: rotate(45deg);
 }
 
 .square:nth-child(7n) {
   background: #fddcbf;
+  transform: rotate(85deg);
 }
 
 .square:nth-child(11n) {
   background: #facccc;
 }
 
-.square:nth-child(5n) {
-  transform: rotate(45deg);
+
+.square:nth-child(9n) {
+  transform: rotate(30deg);
+}
+
+.square:nth-child(20n) {
+  transform: rotate(70deg);
 }
 
 
