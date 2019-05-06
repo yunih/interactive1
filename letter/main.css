@@ -36,18 +36,12 @@ body {
   transform: rotate(45deg);
 }
 
-.description {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 /*html - title   #zero:hover*/
 
 .disabled {
   pointer-events: none;
+  transform: scale(.5);
 }
 
 
@@ -55,46 +49,10 @@ body {
     height: 100vh;
 }
 
-.title #O {
+/*.title #O {
     transform: scale(.5);
 }
-
-.title #R {
-    transform: scale(.5);
-}
-
-.title #I {
-    transform: scale(.5);
-}
-
-.title #G {
-    transform: scale(.5);
-}
-
-.title #A {
-    transform: scale(.5);
-}
-
-.title #M {
-    transform: scale(.5);
-}
-
-.title #T {
-    transform: scale(.5);
-}
-
-.title #Y {
-    transform: scale(.5);
-}
-
-.title #P {
-    transform: scale(.5);
-}
-
-.title #E {
-    transform: scale(.5);
-}
-
+*/
 
 
 .top-title {
@@ -1949,6 +1907,536 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 #zero:hover div.fill{
     opacity: 0;
 }
+
+/*.*/
+#dot .left {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(40% 60%, 40% 80%, 60% 80%);
+}
+
+#dot .right {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(40% 60%, 60% 60%, 60% 80%);
+}
+
+/*,*/
+
+#comma .left {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(40% 60%, 40% 80%, 60% 80%);
+}
+
+#comma .right {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(40% 60%, 60% 60%, 60% 80%);
+}
+
+#comma .bottom {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(50% 80%, 60% 90%, 60% 80%);
+}
+
+/*?*/
+
+#question .top.left {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(20% 30%, 50% 0, 50% 30%);
+}
+
+#question .top.right {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(80% 30%, 50% 0, 50% 30%);
+}
+
+#question .mid {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(80% 30%, 50% 60%, 50% 30%);
+}
+
+#question .bottom.left {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(40% 90%, 50% 100%, 50% 80%);
+}
+
+#question .bottom.right {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(60% 90%, 50% 100%, 50% 80%);
+}
+
+
+/*!*/
+
+#exclamation .top {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(40% 0, 60% 0, 50% 60%);
+}
+
+#exclamation .left {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(40% 90%, 50% 100%, 50% 80%);
+}
+
+#exclamation .right {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(60% 90%, 50% 100%, 50% 80%);
+}
+
+
+/*"left*/
+#quotation-left .left.top {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(25% 10%, 25% 20%, 35% 20%);
+}
+
+#quotation-left .left.mid {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(25% 40%, 25% 20%, 45% 40%);
+}
+
+#quotation-left .left.bottom {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(45% 20%, 25% 20%, 45% 40%);
+}
+
+#quotation-left .right.top {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(50% 10%, 50% 20%, 60% 20%);
+}
+
+#quotation-left .right.mid {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(50% 40%, 50% 20%, 70% 40%);
+}
+
+#quotation-left .right.bottom {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(70% 20%, 50% 20%, 70% 40%);
+}
+
+/*"right*/
+
+#quotation-right .left.top {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(25% 10%, 25% 30%, 45% 30%);
+}
+
+#quotation-right .left.mid {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(25% 10%, 45% 10%, 45% 30%);
+}
+
+#quotation-right .left.bottom {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(35% 30%, 45% 40%, 45% 30%);
+}
+
+#quotation-right .right.top {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(50% 10%, 50% 30%, 70% 30%);
+}
+
+#quotation-right .right.mid {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(50% 10%, 70% 10%, 70% 30%);
+}
+
+#quotation-right .right.bottom {
+    width: 180px;
+    height: 180px;
+    background: #bfdb81;
+    position: absolute;
+    clip-path: polygon(70% 40%, 60% 30%, 70% 30%);
+}
+
+
+/*GREEN*/
+
+#A .fill {
+    width: 180px;
+    height: 180px;
+    background: #28a91c;
+    position: absolute;
+}
+
+#L .fill {
+    width: 180px;
+    height: 180px;
+    background: #28a91c;
+    position: absolute;
+}
+
+#M .fill {
+    width: 180px;
+    height: 180px;
+    background: #28a91c;
+    position: absolute;
+}
+
+#X .fill {
+    width: 180px;
+    height: 180px;
+    background: #28a91c;
+    position: absolute;
+}
+
+#Y .fill {
+    width: 180px;
+    height: 180px;
+    background: #28a91c;
+    position: absolute;
+}
+
+#zero .fill {
+    width: 180px;
+    height: 180px;
+    background: #28a91c;
+    position: absolute;
+}
+
+/*PINK*/
+
+#B .fill {
+    width: 180px;
+    height: 180px;
+    background: #ff3e82;
+    position: absolute;
+}
+
+#K .fill {
+    width: 180px;
+    height: 180px;
+    background: #ff3e82;
+    position: absolute;
+}
+
+#N .fill {
+    width: 180px;
+    height: 180px;
+    background: #ff3e82;
+    position: absolute;
+}
+
+#W .fill {
+    width: 180px;
+    height: 180px;
+    background: #ff3e82;
+    position: absolute;
+}
+
+#Z .fill {
+    width: 180px;
+    height: 180px;
+    background: #ff3e82;
+    position: absolute;
+}
+
+#nine .fill {
+    width: 180px;
+    height: 180px;
+    background: #ff3e82;
+    position: absolute;
+}
+
+/*BLUE*/
+
+#C .fill {
+    width: 180px;
+    height: 180px;
+    background: #3392cc;
+    position: absolute;
+}
+
+#J .fill {
+    width: 180px;
+    height: 180px;
+    background: #3392cc;
+    position: absolute;
+}
+
+#O .fill {
+    width: 180px;
+    height: 180px;
+    background: #3392cc;
+    position: absolute;
+}
+
+#V .fill {
+    width: 180px;
+    height: 180px;
+    background: #3392cc;
+    position: absolute;
+}
+
+#one .fill {
+    width: 180px;
+    height: 180px;
+    background: #3392cc;
+    position: absolute;
+}
+
+#eight .fill {
+    width: 180px;
+    height: 180px;
+    background: #3392cc;
+    position: absolute;
+}
+
+/*ORANGE*/
+
+#D .fill {
+    width: 180px;
+    height: 180px;
+    background: #ff7b08;
+    position: absolute;
+}
+
+#I .fill {
+    width: 180px;
+    height: 180px;
+    background: #ff7b08;
+    position: absolute;
+}
+
+#P .fill {
+    width: 180px;
+    height: 180px;
+    background: #ff7b08;
+    position: absolute;
+}
+
+#U .fill {
+    width: 180px;
+    height: 180px;
+    background: #ff7b08;
+    position: absolute;
+}
+
+#two .fill {
+    width: 180px;
+    height: 180px;
+    background: #ff7b08;
+    position: absolute;
+}
+
+#seven .fill {
+    width: 180px;
+    height: 180px;
+    background: #ff7b08;
+    position: absolute;
+}
+
+/*RED*/
+
+#E .fill {
+    width: 180px;
+    height: 180px;
+    background: #e60000;
+    position: absolute;
+}
+
+#H .fill {
+    width: 180px;
+    height: 180px;
+    background: #e60000;
+    position: absolute;
+}
+
+#Q .fill {
+    width: 180px;
+    height: 180px;
+    background: #e60000;
+    position: absolute;
+}
+
+#T .fill {
+    width: 180px;
+    height: 180px;
+    background: #e60000;
+    position: absolute;
+}
+
+#three .fill {
+    width: 180px;
+    height: 180px;
+    background: #e60000;
+    position: absolute;
+}
+
+#six .fill {
+    width: 180px;
+    height: 180px;
+    background: #e60000;
+    position: absolute;
+}
+
+/*PURPLE*/
+
+#F .fill {
+    width: 180px;
+    height: 180px;
+    background: #9245e3;
+    position: absolute;
+}
+
+#G .fill {
+    width: 180px;
+    height: 180px;
+    background: #9245e3;
+    position: absolute;
+}
+
+#R .fill {
+    width: 180px;
+    height: 180px;
+    background: #9245e3;
+    position: absolute;
+}
+
+#S .fill {
+    width: 180px;
+    height: 180px;
+    background: #9245e3;
+    position: absolute;
+}
+
+#F .fill {
+    width: 180px;
+    height: 180px;
+    background: #9245e3;
+    position: absolute;
+}
+
+#four .fill {
+    width: 180px;
+    height: 180px;
+    background: #9245e3;
+    position: absolute;
+}
+
+#five .fill {
+    width: 180px;
+    height: 180px;
+    background: #9245e3;
+    position: absolute;
+}
+
+
+
+/*about ORIGAMI TYPE*/
+
+.description {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*The quick brown fox jumps over the lazy dog*/
+
+.pangram {
+    height: 100vh;
+    display: flex;
+
+}
+
+.letter-p {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    border-color: #1c2f45;
+}
+
+.grid-container-p { 
+  display: grid;
+  grid-template-columns: repeat(12, 105px);
+  grid-template-rows: repeat(5, 105px);
+  grid-gap: 5px 2px;
+  justify-content: center;
+}
+
+.grid-item-p {
+  background-color: none;
+  border: none;
+    display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 105px;
+}
+
+
 
 
 
