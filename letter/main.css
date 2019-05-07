@@ -2426,6 +2426,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-family: 'Barrio', cursive;
     font-size: 25px;
 }
@@ -2436,6 +2437,8 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 .pangram {
     height: 100vh;
     display: flex;
+    background-image: url("image/fox.png") 50%;
+    background-image: url("image/dog.png") 50%;
 
 }
 
@@ -2462,6 +2465,45 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
   height: 30px;
   width: 105px;
 }
+
+/*working*/
+
+.working {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.grid-container-w {
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    grid-template-rows: repeat(3, 180px);
+    grid-gap: 20px 2px;
+    justify-content: center;
+}
+
+.grid-item-w{
+    background-color: none;
+  border: none;
+    display: flex;
+  justify-content: center;
+}
+
+.letter-w {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    border-color: #1c2f45;
+    pointer-events: none;
+}
+
+
+
+
+
 
 
 

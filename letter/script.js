@@ -11,7 +11,7 @@ function getRandomInt(min, max) {
 }
 
 var i;
-for (i = 0; i < 60; i++) { 
+for (i = 0; i < 80; i++) { 
 	var yPos = getRandomInt(0, height);
 	var xPos = getRandomInt(0, width);  
   $('.title').append('<div style=" top: '+yPos+'px; left: '+xPos+'px;" class="square"></div>');
