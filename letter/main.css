@@ -5,6 +5,7 @@ body {
 }
 
 
+
 .letter-left {
     top: calc(50vh - 10px);
     position: fixed;
@@ -72,12 +73,10 @@ body {
 
 .title {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-/*.title #O {
-    transform: scale(.5);
-}
-*/
 
 
 .top-title {
@@ -2501,7 +2500,10 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 }
 
 
-
+.myVideo{
+    position: absolute;
+    z-index: -9999;
+}
 
 
 
