@@ -2422,7 +2422,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 
 .description {
     height: 100vh;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -2430,6 +2430,14 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
     font-size: 25px;
 }
 
+.two-col {
+    padding: 100px;
+    width: 50%;
+    float: left;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+    margin-top: 100px;
+}
 
 /*The quick brown fox jumps over the lazy dog*/
 
@@ -2454,6 +2462,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
   grid-template-rows: repeat(6, 105px);
   grid-gap: 5px 2px;
   justify-content: center;
+  margin: auto;
 }
 
 .grid-item-p {
