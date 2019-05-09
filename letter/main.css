@@ -2524,10 +2524,28 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
     position: absolute;
     z-index: -9999;
 }
+/*
 
+.huge {
+    height: 100vh;
+    pointer-events: none;
+    position: relative;
+    display: block;
+    padding-top: 100px;
+}
 
+.letter-h-o {
+    transform: scale(5);
+    position: absolute;
+    z-index: -500;
+}
 
-
-
+.letter-h-r {
+    transform: scale(3);
+    position: absolute;
+    z-index: -500;
+    padding-top: 260PX;
+    padding-left: 200px;
+}*/
 
 
