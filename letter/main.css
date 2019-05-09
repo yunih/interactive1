@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Barrio');
+@import url('https://fonts.googleapis.com/css?family=Kirang+Haerang');
 
 body {
 	
@@ -2426,15 +2427,25 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: 'Barrio', cursive;
-    font-size: 25px;
+    font-family: 'Kirang Haerang', cursive;
+    font-size: 30px;
+    padding-top: 300px;
 }
 
-.two-col {
+.two-col-1 {
     padding: 100px;
     width: 50%;
     float: left;
-    transform: rotate(45deg);
+    transform: rotate(-25deg);
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+.two-col-2 {
+    padding: 100px;
+    width: 50%;
+    float: left;
+    transform: rotate(25deg);
     box-sizing: border-box;
     margin-top: 100px;
 }
@@ -2442,6 +2453,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 /*The quick brown fox jumps over the lazy dog*/
 
 .pangram {
+    padding-top: 100px;
     height: 100vh;
     display: flex;
     background-image: url("image/fox.png") 50%;
@@ -2477,7 +2489,6 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 /*working*/
 
 .working {
-    height: 100vh;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -2486,8 +2497,8 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
 .grid-container-w {
     display: grid;
     grid-template-columns: repeat(5, 180px);
-    grid-template-rows: repeat(3, 180px);
-    grid-gap: 20px 2px;
+    grid-template-rows: repeat(11, 180px);
+    grid-gap: 30px 5px;
     justify-content: center;
 }
 
