@@ -2438,7 +2438,7 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
     float: left;
     transform: rotate(-25deg);
     box-sizing: border-box;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .two-col-2 {
@@ -2447,13 +2447,12 @@ clip-path: polygon(100% 70%, 100% 90%, 50% 70%);
     float: left;
     transform: rotate(25deg);
     box-sizing: border-box;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 /*The quick brown fox jumps over the lazy dog*/
 
 .pangram {
-    padding-top: 100px;
     height: 100vh;
     display: flex;
     background-image: url("image/fox.png") 50%;
